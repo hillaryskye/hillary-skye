@@ -1,0 +1,95 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+main {
+  margin: 0;
+  background-color: #c7d1ea;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+section{
+  margin: 0 auto;
+/*   width: 95%;
+ */}
+.main {
+  margin-left: 20px;
+  width: 80%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+.left {
+  margin: 0 auto;
+  float: left;
+}
+.left:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.right {
+  float: right;
+}
+.right:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.one-half {
+/*   border: 2px solid purple;
+text-align: center;
+ */  width: 45%;
+  padding: 5px;
+/*   display: inline-block;
+ */  float: left;
+  margin: 5px;
+ }
+
+ .one-half:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+/* Phones ----------- */
+ @media only screen and (max-width : 767px) {
+    p {
+      font-size: 18px;
+    }
+}
+
+/* Tablets ----------- */
+ @media only screen and (min-width : 768px) {
+    /* CSS Styles */
+    p {
+      font-size: 16px;
+    }
+}
+
+/* -------- COLUMN LAYOUTS -------*/
+/* -- Column Sizes -- */
+
+.one-fourth   { width:21.25%; }
+.one-third    { width:29.333%; }
+/* .one-half     { width:45.5%; }
+*/
+.two-third    { width:61.666%; }
+.three-fourth { width:69.75%; }
+.one-column   { width:94%; }
+.full-column  { width:100%; }
+
+/* -- Column Margin & Float-- */
+.one_half,.one_third,.two_third,
+.three_fourth,.one_fourth,.one_column,
+.full_column {
+margin-left:3%;
+margin-top:1%;
+float:left;
+}
+
+/* -- Column Row (aka Clearfix) -- */
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}

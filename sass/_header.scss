@@ -1,0 +1,42 @@
+.main-header {
+  width: 100%;
+  padding: 60px;
+  background: url('/images/elk.jpg');
+}
+
+.main-nav {
+  a {
+/*     color: darken($drkblue, 35);
+ */    font-size: 22px;
+    margin-right: 20px;
+    border-bottom: none;
+  }
+}
+header {
+  margin-top: -40px;
+  text-align: center;
+}
+nav {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid orange;
+  background: #d3beaf;
+  font-weight: bold;
+  list-style: none;
+/*   text-align: center;
+ */  margin: 0 auto;
+}
+
+nav li, article li {
+  list-style: none;
+/*   font-size: 20px;
+float: left;
+padding: 20px;
+padding-left: 50px;
+ */
+}
+nav li:after {
+  content: "";
+  display: table;
+  clear: both;
+}

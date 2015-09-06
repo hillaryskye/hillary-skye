@@ -1,0 +1,74 @@
+.login {
+  margin-top: 20px;
+  margin-left: 40px;
+  color: white;
+  background: #482ACF;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  transition: 300ms ease all;
+}
+
+.welcome {
+  width: 50%;
+  margin: 0 auto;
+  color: #af0a0a;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #482ACF;
+  margin-top: 20px;
+}
+.href {
+  margin-left: 35px;
+  display: block;
+/*   float:left;
+width: 32%;
+text-align: center;
+ */}
+.href:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* .href a {
+  color: white;
+} */
+/* .desc {
+ float:left;
+ width: 35%;
+}
+.desc:after {
+ content: "";
+ display: table;
+ clear: both;
+} */
+
+img {
+  margin-left: 50px;
+  width: 80%;
+  float: left;
+}
+img:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.text-align {
+  padding-right: 20px;
+  text-align: right;
+/*     text-align: ".";
+ */}
+ .project {
+   float: left;
+   width: 50%;
+ }
+ .project:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+ .fa {
+   font-size: 1.8em;
+   color: #af0a0a;
+ }
