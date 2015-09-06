@@ -151,3 +151,41 @@ section.module.parallax-1 {
   background-image: url("/images/ireland3_big.jpg");
 }
  */
+ /*Animations*/
+.slide{
+  left:0;
+}
+
+.slide.ng-enter{
+  transition:5s linear all;
+  position:fixed;
+  z-index:inherit;
+  left:-100%;
+  height:inherit;
+}
+
+.slide.ng-leave{
+  transition:5s linear all;
+  position:fixed;
+  z-index:9999;
+  right:0;
+}
+
+.slide.ng-leave-active{
+  transition:5s linear all;
+  position:fixed;
+  right:-100%;
+  left:100%;
+}
+
+.slide.ng-enter-active{
+  transition:5s linear all;
+  left:0;
+  position:relative;
+}
+
+/* Additional classes */
+.slide.ng-leave-noanimation{
+  right:-100%;
+  left:100%;
+}

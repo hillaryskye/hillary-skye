@@ -37,7 +37,9 @@ p:after {
   display: table;
   clear: both;
 }
-
+p:hover, h2:hover {
+  color: #114fe0;
+}
 h1, h2, h3, h4 {
 /*   margin: 1.414em 0 0.5em;
  */  font-weight: inherit;
