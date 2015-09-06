@@ -138,7 +138,7 @@ text-align: center;
 hr {
   position: relative;
   color: #2d2b2b;
-  height: 2px;
+  padding: 1.2px;
   width: 54%;
   background: #2d2b2b;
   top: 100px; }
@@ -188,8 +188,8 @@ footer {
   float: left;
   width: 80%;
   color: white;
-  background: #2d2b2b;
-  /* opacity: .4; */
+  background: black;
+  opacity: .8;
   margin: 0 0 0 -40%;
   left: 50%;
   position: relative;
@@ -243,7 +243,7 @@ section.module.content {
   padding: 40px 0; }
 
 section.module.parallax {
-  height: 600px;
+  height: 400px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -330,7 +330,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   line-height: 1.45;
   color: #333; }
@@ -368,7 +368,8 @@ h6 {
   font-weight: bold; }
 
 h1 {
-  background: white;
+  /*   background: white;
+ */
   padding: 10px;
   padding-left: 55px;
   margin-top: 0;

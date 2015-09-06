@@ -34,7 +34,7 @@ text-align: center;
 hr {
   position: relative;
   color: #2d2b2b;
-  height: 2px;
+  padding: 1.2px;
   width: 54%;
   background: #2d2b2b;
   top: 100px;
@@ -83,8 +83,8 @@ img:hover {
    float: left;
    width: 80%;
    color: white;
-   background: #2d2b2b;
-   /* opacity: .4; */
+   background: black;
+   opacity: .8;
    margin: 0 0 0 -40%;
    left: 50%;
    position: relative;
@@ -135,7 +135,7 @@ section.module.content {
   padding: 40px 0;
 }
 section.module.parallax {
-  height: 600px;
+  height: 400px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
