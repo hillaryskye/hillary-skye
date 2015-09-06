@@ -12,8 +12,8 @@
 <!--   <base href="/">
  -->  </head>
 <body ng-cloak>
-  <main>
-    <div ng-controller="PortfolioCtrl">
+<!--   <main>
+ -->    <div ng-controller="PortfolioCtrl">
     <h1 class="welcome">Portfolio for Hillary Shannon Skye</h1>
 <!--     <nav>
   <a ng-href="home.html">Home</a>
@@ -21,7 +21,14 @@
   <a ng-href="contact.html">Contact</a>
 </nav>
  -->
-     <section>
+ <section class="module parallax parallax-1">
+<!--   <div class="container">
+ -->    Hello from 1st pic
+<!--   </div>
+ --></section>
+
+     <section class="module content">
+        <div class="container">
           <div class="project" ng-repeat="project in projects">
           <h2>{{project.name}}</h2>
           <div class="img">
@@ -33,6 +40,7 @@
             <a ng-href="{{project.github}}"><i class="fa fa-github"></i></a>
           </div>
           </div>
+        </div>
     </section>
       <hr>
     <footer>
@@ -45,8 +53,8 @@
         <a class="show" href="http://www.hillaryskye.com"><i class="show fa fa-bicycle">&nbsp;</i>hillaryskye.com</a>
       </nav>
       <nav class="title">Front-end Developer</nav>
-   </main>
-    </footer>
+<!--    </main>
+ -->    </footer>
     <div ng-view></div>
 
 <script src="/js/ang.js"></script>

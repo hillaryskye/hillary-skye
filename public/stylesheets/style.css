@@ -6,7 +6,9 @@ main {
   background-color: #c7d1ea;
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  /*   background: url('/images/chicago_2048.jpg');
+ */ }
 
 section {
   margin: 0 auto;
@@ -163,8 +165,11 @@ img:hover {
  */ }
 
 .project {
+  background: black;
+  opacity: .7;
   float: left;
-  width: 50%; }
+  width: 50%;
+  padding-bottom: 20px; }
 
 .project:after {
   content: "";
@@ -218,6 +223,42 @@ a:after {
   text-shadow: 1px 1px 2px white;
   font-size: 1.6em; }
 
+.container {
+  /*   max-width: 960px;
+ */
+  margin: 0 auto; }
+
+section.module:last-child {
+  margin-bottom: 0; }
+
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300; }
+
+section.module p:last-child {
+  margin-bottom: 0; }
+
+section.module.content {
+  padding: 40px 0; }
+
+section.module.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+
+section.module.parallax-1 {
+  background-image: url("/images/chicago.jpg"); }
+
+/* section.module.parallax-2 {
+  background-image: url("/images/ireland1_big.jpg");
+}
+section.module.parallax-1 {
+  background-image: url("/images/ireland3_big.jpg");
+}
+ */
 form {
   width: 100%;
   margin-top: 20px; }
@@ -283,8 +324,13 @@ html {
 
 body {
   background-color: #c7d1ea;
-  /*   font-family: 'Libre Baskerville', serif;
- */
+  background: url("/images/chicago_2048.jpg");
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Libre Baskerville', serif;
   font-weight: 400;
   line-height: 1.45;
   color: #333; }
@@ -300,12 +346,11 @@ article {
   height: 25px; }
 
 p {
+  color: white;
   float: left;
   width: 80%;
-  text-align: ".";
   margin-left: 50px;
   font-size: .9em;
-  margin-bottom: 1.3em;
   padding-left: 10px; }
 
 p:after {

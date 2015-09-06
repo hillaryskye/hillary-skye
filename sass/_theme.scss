@@ -60,8 +60,11 @@ img:hover {
 /*     text-align: ".";
  */}
  .project {
+   background: black;
+   opacity: .7;
    float: left;
    width: 50%;
+   padding-bottom: 20px;
  }
  .project:after {
    content: "";
@@ -113,3 +116,38 @@ img:hover {
   text-shadow: 1px 1px 2px white;
   font-size: 1.6em;
 }
+.container {
+/*   max-width: 960px;
+ */  margin: 0 auto;
+}
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax-1 {
+  background-image: url("/images/chicago.jpg");
+}
+/* section.module.parallax-2 {
+  background-image: url("/images/ireland1_big.jpg");
+}
+section.module.parallax-1 {
+  background-image: url("/images/ireland3_big.jpg");
+}
+ */
