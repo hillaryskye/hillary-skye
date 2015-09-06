@@ -108,7 +108,8 @@ text-align: center;
   padding: 10px 25px;
   border-radius: 10px;
   border: 1px solid #000;
-  transition: 300ms ease all; }
+  /*   transition: 300ms ease all;
+ */ }
 
 .welcome {
   width: 50%;
@@ -132,19 +133,17 @@ text-align: center;
   display: table;
   clear: both; }
 
-/* .href a {
-  color: white;
-} */
-/* .desc {
- float:left;
- width: 35%;
-}
-.desc:after {
- content: "";
- display: table;
- clear: both;
-} */
+hr {
+  position: relative;
+  color: #2d2b2b;
+  height: 2px;
+  width: 54%;
+  background: #2d2b2b;
+  top: 100px; }
+
 img {
+  transition: 300ms ease all;
+  opacity: .5;
   margin-left: 50px;
   width: 80%;
   float: left; }
@@ -153,6 +152,9 @@ img:after {
   content: "";
   display: table;
   clear: both; }
+
+img:hover {
+  opacity: 1; }
 
 .text-align {
   padding-right: 20px;
@@ -170,8 +172,51 @@ img:after {
   clear: both; }
 
 .fa {
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: #af0a0a; }
+
+.fa:hover {
+  color: white; }
+
+footer {
+  padding: 50px;
+  float: left;
+  width: 80%;
+  color: white;
+  background: #2d2b2b;
+  /* opacity: .4; */
+  margin: 0 0 0 -40%;
+  left: 50%;
+  position: relative;
+  bottom: 20px;
+  top: 200px; }
+
+.github {
+  margin-left: 5px; }
+
+.show {
+  color: #114fe0;
+  margin-left: 0;
+  /*   color: #24227F;
+   */
+  text-decoration: none;
+  transition: 300ms ease all;
+  /*   background: #af0a0a;
+   */ }
+
+.show a {
+  color: #114fe0; }
+
+a:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.title {
+  color: #114fe0;
+  float: right;
+  text-shadow: 1px 1px 2px white;
+  font-size: 1.6em; }
 
 form {
   width: 100%;
@@ -217,14 +262,7 @@ header {
   text-align: center; }
 
 nav {
-  width: 90%;
-  padding: 10px;
-  border: 1px solid orange;
-  background: #d3beaf;
-  font-weight: bold;
   list-style: none;
-  /*   text-align: center;
- */
   margin: 0 auto; }
 
 nav li, article li {
@@ -266,7 +304,7 @@ p {
   width: 80%;
   text-align: ".";
   margin-left: 50px;
-  font-size: .7em;
+  font-size: .9em;
   margin-bottom: 1.3em;
   padding-left: 10px; }
 
@@ -352,7 +390,7 @@ h1 {
 
 a:hover, button:hover {
   color: #fff;
-  background: mediumslateblue; }
+  background: #114fe0; }
 
 span {
   color: #482ACF; }
@@ -531,7 +569,8 @@ figure {
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  height: 0; }
+  /*   height: 0;
+ */ }
 
 /**
  * Contain overflow in all browsers.
