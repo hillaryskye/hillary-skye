@@ -16,8 +16,9 @@
   color: #af0a0a;
   font-weight: bold;
   text-align: center;
-  border: 2px solid #482ACF;
-  margin-top: 20px;
+  border-bottom: 3px solid #114fe0;
+  margin-top: 100px;
+  padding: .005px;
 }
 .href {
   margin-left: 35px;
@@ -135,7 +136,7 @@ section.module.content {
   padding: 40px 0;
 }
 section.module.parallax {
-  height: 400px;
+  height: 200px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;

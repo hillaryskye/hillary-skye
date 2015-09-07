@@ -119,8 +119,9 @@ text-align: center;
   color: #af0a0a;
   font-weight: bold;
   text-align: center;
-  border: 2px solid #482ACF;
-  margin-top: 20px; }
+  border-bottom: 3px solid #114fe0;
+  margin-top: 100px;
+  padding: .005px; }
 
 .href {
   margin-left: 35px;
@@ -243,7 +244,7 @@ section.module.content {
   padding: 40px 0; }
 
 section.module.parallax {
-  height: 400px;
+  height: 200px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -388,7 +389,9 @@ h1 {
   padding: 10px;
   padding-left: 55px;
   margin-top: 0;
-  font-size: 2.441em; }
+  font-size: 5em;
+  margin: 0.67em 0;
+  font-family: 'Bad Script', cursive; }
 
 h2 {
   background: #af0a0a;
@@ -444,10 +447,6 @@ a:after {
   content: "";
   display: table;
   clear: both; }
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
 
 a:hover, button:hover {
   color: #fff;
@@ -569,10 +568,10 @@ dfn {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
-h1 {
+/* h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
-
+  margin: 0.67em 0;
+} */
 /**
  * Address styling not present in IE 8/9.
  */

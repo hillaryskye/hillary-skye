@@ -52,10 +52,13 @@ h6 {
 
 h1 {
 /*   background: white;
- */  padding: 10px;
+ */
+  padding: 10px;
   padding-left: 55px;
   margin-top: 0;
-  font-size: 2.441em;
+  font-size: 5em;
+  margin: 0.67em 0;
+  font-family: 'Bad Script', cursive;
 }
 
 h2 {
@@ -114,10 +117,6 @@ a:after {
   content: "";
   display: table;
   clear: both;
-}
- h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
 }
 
   a:hover, button:hover {
