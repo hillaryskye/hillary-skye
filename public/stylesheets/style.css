@@ -141,7 +141,7 @@ hr {
   padding: 1.2px;
   width: 54%;
   background: #2d2b2b;
-  top: 100px; }
+  top: 300px; }
 
 img {
   transition: 300ms ease all;
@@ -194,7 +194,7 @@ footer {
   left: 50%;
   position: relative;
   bottom: 20px;
-  top: 200px; }
+  top: 400px; }
 
 .github {
   margin-left: 5px; }
@@ -260,38 +260,17 @@ section.module.parallax-1 {
 }
  */
 /*Animations*/
-.slide {
-  left: 0; }
+h1 {
+  -webkit-animation-duration: 3s;
+  -moz-animation-delay: 2s;
+  /*    animation-iteration-count: ;
+ */ }
 
-.slide.ng-enter {
-  transition: 5s linear all;
-  position: fixed;
-  z-index: inherit;
-  left: -100%;
-  height: inherit; }
-
-.slide.ng-leave {
-  transition: 5s linear all;
-  position: fixed;
-  z-index: 9999;
-  right: 0; }
-
-.slide.ng-leave-active {
-  transition: 5s linear all;
-  position: fixed;
-  right: -100%;
-  left: 100%; }
-
-.slide.ng-enter-active {
-  transition: 5s linear all;
-  left: 0;
-  position: relative; }
-
-/* Additional classes */
-.slide.ng-leave-noanimation {
-  right: -100%;
-  left: 100%; }
-
+/*  h2:hover {
+  -webkit-animation-duration: 3s;
+  -moz-animation-delay: 10s;
+   animation-iteration-count: 3;
+} */
 form {
   width: 100%;
   margin-top: 20px; }
