@@ -16,9 +16,10 @@
   color: #af0a0a;
   font-weight: bold;
   text-align: center;
-  border-bottom: 3px solid #114fe0;
+  border: 3px solid #114fe0;
   margin-top: 100px;
-  padding: .005px;
+  padding-top: 20px;
+  padding-bottom: 14px;
 }
 .href {
   margin-left: 35px;
@@ -163,3 +164,9 @@ section.module.parallax-1 {
   -moz-animation-delay: 10s;
    animation-iteration-count: 3;
 } */
+.svg-container {
+/*   width: 75%;
+ */}
+svg {
+  margin: 0 auto;
+}

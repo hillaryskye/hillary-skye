@@ -9,23 +9,40 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <link rel="stylesheet" href="/js/animate.css">
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700italic|Bad+Script' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,900,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,300,200' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/stylesheets/style.css" />
   <!--   <base href="/">
- -->  </head>
+
+ -->
+</head>
   <body ng-cloak>
   <!--   <main>
  -->    <div ng-controller="PortfolioCtrl">
-    <h1 class="welcome animated fadeInLeft">Hillary Shannon Skye</h1>
+<!--     <h1 class="welcome animated fadeInLeft">Hillary Shannon Skye</h1>
+ -->
+   <div class="welcome animated fadeInLeft svg-container">
+    <svg version="1.1"
+     baseProfile="full"
+     width="600" height="150"
+     xmlns="http://www.w3.org/2000/svg">
 
-<!--        <h2 class="animated hinge">Check it out!</h2>
- --><!--   <nav>
-<a ng-href="home.html">Home</a>
-<a ng-href="about.html">About</a>
-<a ng-href="contact.html">Contact</a>
-</nav> -->
+  <rect width="100%" height="100%" fill="#af0a0a" />
 
+<!--   <circle cx="150" cy="100" r="80" fill="green" />
+ -->
+ <path id="my_path" d="M10 80 Q 52.5 10, 95 80 T 180 80" stroke="black" stroke-width="3" transform="translate(285,-30) rotate(30)" fill="transparent"/>
+   <text x="300" y="100" font-size="80" text-anchor="middle" fill="white">Hillary Skye</text>
+
+<!--    <path id="my_path" d="M 20,20 C 40,40 80,40 100,20" />
+-->   <text fill="blue">
+     <textPath startOffset="0" xlink:href="#my_path">Shannon
+      <animate attributeName="startOffset" values="0;.5;1" dur="8s" repeatCount="indefinite" keyTimes="0;.5;1" />
+     </textPath>
+   </text>
+    </svg>
+  </div>
  <section class="module parallax parallax-1">
 <!--   <div class="container">
 <!--   </div>
@@ -51,7 +68,7 @@
       <nav>
         <li>Hillary Shannon Skye</li>
         <li>720-218-6389</li>
-        <li>skyeinc@qwestoffice.net</li>
+        <li>hillary@hillaryskye.com</li>
         <a class="show" href="http://www.linkedin.com/in/hillaryskye"><i class="show fa fa-linkedin"></i></a>
         <a class="github show" href="https://github.com/hillaryskye/">&nbsp;<i class="show fa fa-github"></i></a>
         <a class="show" href="http://www.hillaryskye.com"><i class="show fa fa-bicycle">&nbsp;</i>hillaryskye.com</a>
