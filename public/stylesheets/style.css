@@ -840,6 +840,21 @@ th {
  */ }
 
 /* Media Queries */
+@media(Min-width:1226px){
+  .resize {
+    width: 60%;
+  }
+  .full {
+    display: inline;
+  }
+  .med {
+    display: none;
+  }
+  .small {
+    display: none;
+  }
+}
+
 @media(Max-width:1225px){
   .resize {
     width: 60%;
