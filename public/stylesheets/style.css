@@ -434,7 +434,7 @@ h2 {
   color: white;
   text-align: center;
   width: 80%;
-  font-size: 1.953em;
+
   margin-left: 50px; }
 
 h3 {
@@ -471,7 +471,7 @@ blockquote {
 a {
   display: block;
   float: left;
-  margin-left: 105px;
+  margin-left: 50px;
   border-radius: 5px;
   padding: 7px 10px;
   color: #af0a0a;
@@ -887,6 +887,68 @@ th {
 
 @media(Max-width:900px) and (min-width:400px){
   .resize { border: none; }
+  .project h2 {
+    font-size: 18px;
+  }
+
+  .project a {
+    font-size: 12px;
+  }
+
+  section.module p {
+    font-size: 14px;
+  }
+
+  footer .fa {
+    font-size: 1.0em;
+  }
+
+  footer .title {
+    font-size: 1.3em;
+  }
+}
+
+@media(Max-width:600px) {
+  .project {
+    width: 100%;
+  }
+  .project h2 {
+    font-size: 18px;
+  }
+
+  section.module p {
+    font-size: 12px;
+  }
+
+  footer .fa {
+    font-size: .7em;
+  }
+
+  footer .title {
+    font-size: 1.0em;
+  }
+
+  h5 {
+    font-size: 1.0em;
+  }
+}
+
+@media(Max-width:500px){
+  footer .fa {
+    font-size: .7em;
+  }
+
+  footer .title {
+    font-size: 1.0em;
+  }
+
+  footer .show {
+    padding: 3px 3px;
+  }
+
+  li {
+    font-size: .9em;
+  }
 }
 
 @media(Max-width:400px){
@@ -902,5 +964,11 @@ th {
   }
   .small {
     display: inline;
+  }
+  .project h2 {
+    font-size: 16px;
+  }
+  section.module p {
+    font-size: 12px;
   }
 }
