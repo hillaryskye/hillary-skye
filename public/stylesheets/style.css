@@ -122,7 +122,25 @@ text-align: center;
   border: 3px solid #114fe0;
   margin-top: 100px;
   padding-top: 20px;
-  padding-bottom: 14px; }
+  padding-bottom: 14px;
+  padding-right: 20px;
+  padding-left: 20px; }
+
+.border {
+  border: 3px solid #114fe0;
+}
+  /*svg*/
+  .ad {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .ad text {
+    width: 100%;
+    height: 100%;
+  }
 
 .href {
   margin-left: 35px;
@@ -279,6 +297,15 @@ h1 {
 
 svg {
   margin: 0 auto; }
+.z-index {
+  z-index: 10;
+}
+#square {
+  z-index: -1; }
+
+.hold {
+  display: block;
+  min-height: 500px; }
 
 form {
   width: 100%;
@@ -421,8 +448,12 @@ h4 {
   text-align: center; }
 
 h5 {
+  position: relative;
+  top: 300px;
+  color: #af0a0a;
+  width: 100%;
   float: right;
-  font-size: .9em;
+  font-size: 1.2em;
   padding-right: 10px; }
 
 h6 {
@@ -462,6 +493,9 @@ a:hover, button:hover {
 
 span {
   color: #482ACF; }
+
+.center {
+  text-align: center; }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -804,3 +838,54 @@ td,
 th {
   /*   padding: 0;
  */ }
+
+/* Media Queries */
+@media(Max-width:1225px){
+  .resize {
+    width: 60%;
+  }
+  .full {
+    display: inline;
+  }
+  .med {
+    display: none;
+  }
+  .small {
+    display: none;
+  }
+}
+
+@media(Max-width:900px){
+  .resize {
+    width: 80%;
+  }
+  .full {
+    display: none;
+  }
+  .med {
+    display: inline;
+  }
+  .small {
+    display: none;
+  }
+}
+
+@media(Max-width:900px) and (min-width:400px){
+  .resize { border: none; }
+}
+
+@media(Max-width:400px){
+  .resize {
+    width: 100%;
+    border: none;
+  }
+  .full {
+    display: none;
+  }
+  .med {
+    display: none;
+  }
+  .small {
+    display: inline;
+  }
+}

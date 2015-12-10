@@ -28,4 +28,5 @@ app.controller("PortfolioCtrl", ["$scope", function($scope) {
       github: 'https://github.com/hillaryskye/mixer'
     }
   ]
+  $scope.sayings = ['Creative', 'Intelligent', 'Fun', 'Tenacity']
 }])

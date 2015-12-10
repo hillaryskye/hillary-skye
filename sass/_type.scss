@@ -83,8 +83,12 @@ h4 {
   text-align: center;
 }
 h5 {
+  position: relative;
+  top: 300px;
+  color: #af0a0a;
+  width: 100%;
   float: right;
-  font-size: .9em;
+  font-size: 1.2em;
   padding-right: 10px;
 }
 h6 {
@@ -126,4 +130,7 @@ a:after {
 
 span {
   color: #482ACF;
+}
+.center {
+  text-align: center;
 }

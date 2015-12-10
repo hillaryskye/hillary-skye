@@ -170,3 +170,10 @@ section.module.parallax-1 {
 svg {
   margin: 0 auto;
 }
+#square {
+  z-index: -1;
+}
+.hold {
+  display: block;
+  min-height: 500px;
+}
