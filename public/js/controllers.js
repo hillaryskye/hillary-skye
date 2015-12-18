@@ -21,7 +21,7 @@ app.controller("PortfolioCtrl", ["$scope", function($scope) {
     },
     {
       name: 'mixer',
-      url: 'https://ancient-castle-6524.herokuapp.com/colors',
+      url: 'https://fathomless-wave-8517.herokuapp.com/colors',
       desc: 'This app has 2 ways of creating a colors for use in developing a website. Firstly, you can just enter the red, green, blue values and secondly, you can choose a first color, a second color and it mixes a new color. All colors are saved for use in creating more colors.  This is a work in progress. I am still working on making it better and hoping to get some D3 functionality into it.',
       image: 'mixer.png',
       icon: 'fa fa-paint-brush',
