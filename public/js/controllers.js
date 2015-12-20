@@ -26,6 +26,14 @@ app.controller("PortfolioCtrl", ["$scope", function($scope) {
       image: 'mixer.png',
       icon: 'fa fa-paint-brush',
       github: 'https://github.com/hillaryskye/mixer'
+    },
+    {
+      name: 'shopping-angular',
+      url: 'https://shoppingangular.firebaseapp.com/',
+      desc: 'This app is a shopping cart for tea, which was developed using Angular and Firebase',
+      image: 'meantea.png',
+      icon: 'fa fa-coffee',
+      github: 'https://github.com/hillaryskye/shopping-angular'
     }
   ]
   $scope.sayings = ['Creative', 'Intelligent', 'Fun', 'Tenacity']
