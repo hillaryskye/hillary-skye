@@ -31,7 +31,7 @@ app.controller("PortfolioCtrl", ["$scope", function($scope) {
       name: 'shopping-angular',
       url: 'https://shoppingangular.firebaseapp.com/',
       desc: 'This app is a shopping cart for tea, which was developed using Angular and Firebase',
-      image: 'meantea.png',
+      image: 'shopping-angular.png',
       icon: 'fa fa-coffee',
       github: 'https://github.com/hillaryskye/shopping-angular'
     }
