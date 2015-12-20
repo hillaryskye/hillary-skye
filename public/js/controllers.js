@@ -13,7 +13,7 @@ app.controller("PortfolioCtrl", ["$scope", function($scope) {
     },
     {
       name: 'reddit-firebase-angular',
-      url: 'http://development.reddit-firebase-angular.divshot.io/',
+      url: 'https://redditfirebase.firebaseapp.com/',
       desc: 'Create, Read, Delete posts of a mock Reddit App with Firebase, Angular. Each post can be upvoted/ downvoted, favorited and you can add comments to each post.',
       image: 'reddit-firebase-angular.png',
       icon: 'fa fa-reddit',
