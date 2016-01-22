@@ -283,7 +283,7 @@ img:after {
  */ }
 
 .project {
-  background: black;
+  background: rgba(0,0,0,.7);
   float: left;
   width: 50%;
   position: relative;
