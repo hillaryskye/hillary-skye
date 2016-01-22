@@ -150,6 +150,16 @@ width: 32%;
 text-align: center;
  */ }
 
+ .project a.href {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    /*text-transform: uppercase;*/
+    box-shadow: 0 0 1px #000
+}
+
 .href:after {
   content: "";
   display: table;
@@ -165,7 +175,7 @@ hr {
 
 img {
   transition: 300ms ease all;
-  opacity: .5;
+  /*opacity: .5;*/
   margin-left: 50px;
   width: 80%;
   float: left; }
@@ -175,9 +185,97 @@ img:after {
   display: table;
   clear: both; }
 
-img:hover {
-  opacity: 1; }
+/*.project:hover {
+  opacity: 1;
+  background: #af0a0a;
+}*/
 
+.project .mask {
+  position: absolute;
+  overflow: hidden;
+  top: 20px;
+  left: 50px;
+  margin-top: -20px;
+  width: 80%;
+  height: 360px;
+}
+.project .img {
+    display: block;
+    position: relative
+}
+.project h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0
+}
+.project p {
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    padding: 10px 20px 0 20px;
+    text-align: center
+}
+.project a.href {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+.project a.href:hover {
+    box-shadow: 0 0 5px #000
+}
+.view-first .img {
+    transition: all 0.2s linear;
+}
+.view-first .mask {
+    opacity: 0;
+    background-color: rgba(245,245,220, 0.9);
+    transition: all 0.4s ease-in-out;
+}
+.view-first h2 {
+    transform: translateY(-100px) !important;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.view-first p {
+    transform: translateY(100px);
+    opacity: 0;
+	  transition: all 0.2s linear;
+}
+.view-first a.href{
+    opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+.view-first:hover img {
+	transform: scale(1);
+      width: 80%;
+}
+.view-first:hover .mask {
+	opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.href {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.view-first:hover p {
+    transition-delay: 0.1s;
+}
+.view-first:hover a.href {
+    transition-delay: 0.2s;
+}
+.view-fifth img {
+	transition: all 0.3s ease-in-out;
+}
 .text-align {
   padding-right: 20px;
   text-align: right;
@@ -189,13 +287,14 @@ img:hover {
   opacity: .7;
   float: left;
   width: 50%;
-  padding-bottom: 20px; }
+  position: relative;
+  padding-bottom: 45px; }
 
 .project:after {
   content: "";
   display: table;
-  clear: both; }
-
+  clear: both;
+}
 .fa {
   font-size: 1.5em;
   color: #af0a0a; }
@@ -252,10 +351,11 @@ section.module:last-child {
   margin-bottom: 0; }
 
 section.module p {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-size: 16px;
-  font-weight: 300;
-  min-height: 161px; }
+  font-weight: 500;
+  /*min-height: 161px; */
+}
 
 section.module p:last-child {
   margin-bottom: 0; }
@@ -271,7 +371,7 @@ section.module.parallax {
   background-size: cover; }
 
 section.module.parallax-1 {
-  background-image: url("/images/chicago.jpg"); }
+  background-image: url("/images/chicago_2048.jpg"); }
 
 /* section.module.parallax-2 {
   background-image: url("/images/ireland1_big.jpg");
@@ -373,7 +473,7 @@ html {
 
 body {
   background-color: #c7d1ea;
-  background: url("/images/chicago_2048.png");
+  background: url("/images/chicago_2048.jpg");
   height: 600px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -395,10 +495,11 @@ article {
   height: 25px; }
 
 p {
-  color: white;
+  /*color: white;*/
+  color: #114fe0;
   float: left;
-  width: 80%;
-  margin-left: 50px;
+  /*width: 80%;*/
+  /*margin-left: 50px;*/
   font-size: .9em;
   padding-left: 10px; }
 
@@ -407,7 +508,7 @@ p:after {
   display: table;
   clear: both; }
 
-p:hover, h2:hover {
+p:hover {
   color: #114fe0; }
 
 h1, h2, h3, h4 {
@@ -430,11 +531,11 @@ h1 {
   font-family: 'Bad Script', cursive; }
 
 h2 {
-  background: #af0a0a;
+  /*background: #af0a0a;*/
   padding: 10px;
   color: white;
   text-align: center;
-  width: 80%;
+  /*width: 80%;*/
 
   margin-left: 50px; }
 
@@ -869,7 +970,12 @@ th {
   .small {
     display: none;
   }
-}
+  section.module.parallax {
+    height: 0;
+  }
+  footer {
+    top: 200px;
+  }
 
 @media(Max-width:900px){
   .resize {
