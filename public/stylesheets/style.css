@@ -1056,6 +1056,11 @@ th {
 
 @media(Max-width:600px) {
   .resize { border: none; }
+  .welcome {
+    margin-top: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
   .project {
     width: 100%;
     min-height: 200px;
