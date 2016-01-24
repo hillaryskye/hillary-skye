@@ -964,6 +964,9 @@ th {
   .project .mask {
     min-height: 360px;
   }
+  .project {
+    padding-bottom: 60px;
+  }
 }
 @media(Max-width:1225px){
   .resize {
@@ -979,10 +982,21 @@ th {
     display: none;
   }
   .project {
-    padding-bottom: 155px;
+    padding-bottom: 225px;
   }
   .project .mask {
     min-height: 260px;
+  }
+  .project h2 {
+    font-size: 18px;
+  }
+
+  .project a {
+    font-size: 14px;
+  }
+
+  section.module p {
+    font-size: 16px;
   }
   section.module.parallax {
     height: 0;
