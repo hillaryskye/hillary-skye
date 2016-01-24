@@ -948,7 +948,7 @@ th {
 /* Media Queries */
 @media(Min-width:1226px){
   .resize {
-    width: 60%;
+    width: 80%;
   }
   .full {
     display: inline;
@@ -970,7 +970,7 @@ th {
 }
 @media(Max-width:1225px){
   .resize {
-    width: 60%;
+    width: 80%;
   }
   .full {
     display: inline;
@@ -1007,7 +1007,7 @@ th {
 
 @media(Max-width:900px){
   .resize {
-    width: 80%;
+    width: 100%;
   }
   .full {
     display: none;
