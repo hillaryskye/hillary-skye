@@ -1055,6 +1055,7 @@ th {
 }
 
 @media(Max-width:600px) {
+  .resize { border: none; }
   .project {
     width: 100%;
     min-height: 200px;
