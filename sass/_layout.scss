@@ -2,22 +2,11 @@
   box-sizing: border-box;
 }
 main {
-  margin: 0;
-  background-color: #c7d1ea;
-  position: absolute;
-  top: 0;
-  left: 0;
-/*   background: url('/images/chicago_2048.jpg');
- */
+  margin: 0 auto;
+  width: 100%;
+  float: left;
 }
 section{
-  margin: 0 auto;
-/*   width: 95%;
- */}
-.main {
-  margin-left: 20px;
-  width: 80%;
-  max-width: 650px;
   margin: 0 auto;
 }
 .left {
@@ -38,12 +27,9 @@ section{
   clear: both;
 }
 .one-half {
-/*   border: 2px solid purple;
-text-align: center;
- */  width: 45%;
+  width: 45%;
   padding: 5px;
-/*   display: inline-block;
- */  float: left;
+  float: left;
   margin: 5px;
  }
 
@@ -52,20 +38,6 @@ text-align: center;
    display: table;
    clear: both;
  }
-/* Phones ----------- */
- @media only screen and (max-width : 767px) {
-    p {
-      font-size: 18px;
-    }
-}
-
-/* Tablets ----------- */
- @media only screen and (min-width : 768px) {
-    /* CSS Styles */
-    p {
-      font-size: 16px;
-    }
-}
 
 /* -------- COLUMN LAYOUTS -------*/
 /* -- Column Sizes -- */
@@ -95,3 +67,183 @@ content: "";
 display: table;
 clear: both;
 }
+/* Media Queries */
+@media(Min-width:1226px){
+  .resize {
+    width: 80%;
+  }
+  .full {
+    display: inline;
+  }
+  .med {
+    display: none;
+  }
+  .small {
+    display: none;
+  }
+}
+@media (Max-width: 1500px) {
+  .project .mask {
+    /*min-height: 360px;*/
+  }
+  .project {
+    /*padding-bottom: 60px;*/
+  }
+}
+@media(Max-width:1225px){
+  .resize {
+    width: 80%;
+  }
+  .full {
+    display: inline;
+  }
+  .med {
+    display: none;
+  }
+  .small {
+    display: none;
+  }
+  .project {
+    height: 400px;
+  }
+  .project .mask {
+    /*min-height: 235px;*/
+  }
+  .project h2 {
+    font-size: 18px;
+  }
+
+  section.module p {
+    font-size: 16px;
+  }
+  section.module.parallax {
+    height: 0;
+  }
+  footer {
+    top: 200px;
+  }
+
+@media(Max-width:900px){
+  .resize {
+    width: 100%;
+  }
+  .full {
+    display: none;
+  }
+  .med {
+    display: inline;
+  }
+  .small {
+    display: none;
+  }
+}
+
+@media(Max-width:900px) and (min-width:600px){
+  .resize { border: none; }
+  .project {
+    width: 100%;
+    min-height: 200px;
+    padding-bottom: 80px;
+    padding-left: 60px;
+  }
+  .project .mask {
+    /*min-height: 450px;*/
+    min-height: 100%;
+    margin-left: 60px;
+    width: 75%;
+  }
+  .project h2 {
+    font-size: 18px;
+  }
+
+  .project a {
+    font-size: 14px;
+  }
+
+  section.module p {
+    font-size: 16px;
+  }
+
+  footer .fa {
+    font-size: 1.0em;
+  }
+
+  footer .title {
+    font-size: 1.3em;
+  }
+}
+
+@media(Max-width:600px) {
+  .resize { border: none; }
+  .welcome {
+    margin-top: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .project {
+    width: 100%;
+    min-height: 200px;
+    padding-bottom: 150px;
+  }
+  .project mask {
+    min-height: 80%;
+  }
+  /*.project h2 {
+    font-size: 16px;
+  }
+  section.module p {
+    font-size: 14px;
+  }*/
+
+  /*footer .fa {
+    font-size: .7em;
+  }
+
+  footer .title {
+    font-size: 1.0em;
+  }
+
+  h5 {
+    font-size: 1.0em;
+  }*/
+}
+
+/*@media(Max-width:500px){
+  footer .fa {
+    font-size: .7em;
+  }
+
+  footer .title {
+    font-size: 1.0em;
+  }
+
+  footer .show {
+    padding: 3px 3px;
+  }
+
+  li {
+    font-size: .9em;
+  }
+}*/
+
+/*@media(Max-width:400px){
+  .resize {
+    width: 100%;
+    border: none;
+  }
+  .full {
+    display: none;
+  }
+  .med {
+    display: none;
+  }
+  .small {
+    display: inline;
+  }
+  .project h2 {
+    font-size: 16px;
+  }
+  section.module p {
+    font-size: 12px;
+  }
+}*/

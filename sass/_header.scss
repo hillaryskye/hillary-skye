@@ -1,17 +1,3 @@
-.main-header {
-  width: 100%;
-  padding: 60px;
-  background: url('/images/elk.jpg');
-}
-
-.main-nav {
-  a {
-/*     color: darken($drkblue, 35);
- */    font-size: 22px;
-    margin-right: 20px;
-    border-bottom: none;
-  }
-}
 header {
   margin-top: -40px;
   text-align: center;
@@ -23,11 +9,6 @@ nav {
 
 nav li, article li {
   list-style: none;
-/*   font-size: 20px;
-float: left;
-padding: 20px;
-padding-left: 50px;
- */
 }
 nav li:after {
   content: "";

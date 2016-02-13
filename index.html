@@ -20,11 +20,8 @@
 </head>
   <body ng-cloak>
 
-<!--   <main>
- -->
    <div ng-controller="PortfolioCtrl">
-<!--   <h1 class="welcome animated fadeInLeft">Hillary Shannon Skye</h1>
- -->
+
    <div class="welcome resize animated fadeInLeft svg-container">
 
     <svg viewBox="0 0 1000 250" version="1.1"
@@ -61,19 +58,41 @@
 
      <section class="module content">
         <div class="container">
+          <div class="project view-first">
+
+          <img class="img" src="/images/publications-angular.png" alt="">
+          <div class="mask">
+            <h2>publications-angular</h2>
+            <!-- <p>Type: Galvanize Final Assessment</p> -->
+            <p class="desc">Description: The front-end is written using Angular, Node Express
+              and includes Restful Routes.  This app was a final exam for the Galvanize program
+              and an exercise in writing code, without copying code for an 8 hour time frame.
+              The Angular front-end side was deployed with Firebase and the backend Node side was
+              deployed with Heroku.</p>
+            <div class="href">
+              <a target="_blank" ng-href="https://fierce-dusk-42290.herokuapp.com/api/publications"><i class="fa fa-newspaper-o"> </i>&nbsp;publications-api&nbsp;<strong class="black">Click on this one first!</strong></a>
+              <a ng-href="https://publications-angular.firebaseapp.com/#/"><i class="fa fa-hacker-news"></i>&nbsp;publications-angular&nbsp;<strong class="black">Both apps need to be clicked to work!</strong></a>
+              <a ng-href="https://github.com/hillaryskye/publications-api" target="_blank"><i class="fa fa-github"></i>&nbsp; github: publications-api</a>
+              <a ng-href="https://github.com/hillaryskye/publications-angular" target="_blank"><i class="fa fa-github"></i>&nbsp; github: publications-angular</a>
+            </div>
+            </div>
+          </div>
+
           <div class="project view-first" ng-repeat="project in projects">
             <img class="img" src="/images/{{project.name}}.png" alt="">
             <div class="mask">
               <h2>{{project.name}}</h2>
+              <!-- <p>Type: {{project.type}}</p> -->
               <p class="desc">Description: {{project.desc}}</p>
               <div class="href">
                 <a ng-href="{{project.url}}"><i class="{{project.icon}}"> </i>&nbsp;{{project.name}}</a>
-                <a ng-href="{{project.github}}"><i class="fa fa-github"></i></a>
+                <a ng-href="{{project.github}}"><i class="fa fa-github"></i>&nbsp;github: {{project.name}}</a>
               </div>
-            </div>
+              </div>
           </div>
         </div>
     </section>
+<main>
     <footer>
       <nav>
         <li>Hillary Shannon Skye</li>
@@ -84,9 +103,9 @@
         <a class="show" href="https://whispering-dusk-7423.herokuapp.com/"><i class="show fa fa-bicycle">&nbsp;</i>Portfolio</a>
       </nav>
       <nav class="title">Front-end Developer</nav>
-<!--   </main>
- -->
+
   </footer>
+</main>
     <div ng-view class="view"></div>
     <script src="/js/ang.js"></script>
 <!--     <script src="/js/routes.js"></script>
