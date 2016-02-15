@@ -358,7 +358,11 @@ section.module.parallax {
   background-size: cover; }
 
 section.module.parallax-1 {
-  background-image: url("/images/chicago_2048.jpg"); }
+  /*background-image: url("/images/chicago_2048.jpg");*/
+  background-image: url("/images/colorado-mountains-sunrise.jpg");
+  /*background-image: url("/images/colorado2.jpg");
+  background-image: url("/images/colorado3.jpg");*/
+}
 
 /* section.module.parallax-2 {
   background-image: url("/images/ireland1_big.jpg");
@@ -487,7 +491,9 @@ html {
 
 body {
   background-color: #c7d1ea;
-  background: url("/images/chicago_2048.jpg");
+  background-image: url("/images/colorado-mountains-sunrise.jpg");
+  /*background-image: url("/images/colorado2.jpg");
+  background-image: url("/images/colorado3.jpg");*/
   height: 600px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
