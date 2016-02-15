@@ -359,7 +359,7 @@ section.module.parallax {
 
 section.module.parallax-1 {
   /*background-image: url("/images/chicago_2048.jpg");*/
-  background-image: url("/images/colorado-mountains-sunrise.jpg");
+  background-image: url("/images/coloradoSunrise.jpg");
   /*background-image: url("/images/colorado2.jpg");
   background-image: url("/images/colorado3.jpg");*/
 }
@@ -500,7 +500,7 @@ html {
 
 body {
   background-color: #c7d1ea;
-  background-image: url("/images/colorado-mountains-sunrise.jpg");
+  background-image: url("/images/coloradoSunrise.jpg");
   /*background-image: url("/images/colorado2.jpg");
   background-image: url("/images/colorado3.jpg");*/
   height: 600px;
