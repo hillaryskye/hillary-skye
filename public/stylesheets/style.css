@@ -266,7 +266,7 @@ img:after {
   width: 50%;
   position: relative;
   padding-bottom: 45px;
-
+  padding-top: 45px;
     /*width: 100%;*/
     /*height: 100%;*/
     /*display: flex;
@@ -424,13 +424,39 @@ label {
   margin-left: 5px;
   margin-top: 10px; }
 
+  a {
+    display: block;
+    float: left;
+    margin-left: 50px;
+    border-radius: 5px;
+    padding: 7px 10px;
+    color: #af0a0a;
+    text-decoration: none;
+    transition: 300ms ease all;
+  }
+
+.spacer{
+   /*height:200px;*/
+}
+
 header {
-  margin-top: -40px;
+  margin-top: 250px;
   text-align: center; }
 
-nav {
+header nav {
   list-style: none;
-  margin: 0 auto; }
+  margin: 0 auto;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(255, 255, 255, .7);
+  /*background: rgba(255,255,9, .4);*/
+  padding: 25px;
+  width: 100%;
+  z-index: 1;
+  padding-right: 100px;
+}
 
 nav li, article li {
   list-style: none;
@@ -440,7 +466,22 @@ nav li:after {
   content: "";
   display: table;
   clear: both; }
-
+nav a {
+  font-size: 1.1em;
+  font-weight: 400;
+  float: right;
+  margin-left: 20px;
+}
+header nav a:hover {
+  padding: 7px 10px;
+}
+.nav {
+  position: fixed;
+  width: 18%;
+  top: -55px;
+  left: 100px;
+  z-index: 10;
+}
 html {
   font-size: 1em; }
 
@@ -492,11 +533,14 @@ h6 {
   font-weight: bold; }
 
 h1 {
-  padding: 10px;
-  padding-left: 55px;
-  margin-top: 0;
-  font-size: 5em;
-  margin: 0.67em 0;
+  color: #af0a0a;
+  background: rgba(0,0,0,.7);
+  width: 30%;
+  padding: 20px;
+  margin-top: -100px;
+  margin-left: 50px;
+  text-align: center;
+  font-size: 3em;
   font-family: 'Bad Script', cursive; }
 
 h2 {
@@ -535,17 +579,6 @@ blockquote {
   padding-left: 60px;
   border-left: #24227F solid 20px;
   margin-bottom: 20px; }
-
-a {
-  display: block;
-  float: left;
-  margin-left: 50px;
-  border-radius: 5px;
-  padding: 7px 10px;
-  color: #af0a0a;
-  text-decoration: none;
-  transition: 300ms ease all;
-}
 
 a:after {
   content: "";

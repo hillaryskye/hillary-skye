@@ -3,6 +3,20 @@ app.controller("PortfolioCtrl", ["$scope", function($scope) {
 
   console.log('two')
 
+  $(document).ready(function(){
+     var scroll_start = 0;
+     var startchange = $('#startchange');
+     var offset = startchange.offset();
+     $(document).scroll(function() {
+        scroll_start = $(this).scrollTop();
+        if(scroll_start > offset.top) {
+            $('#navbar').css('background-color', 'rgba(0,0,0,.8)');
+         } else {
+            $('#navbar').css('background-color', 'rgba(255,255,255,.7)');
+         }
+     });
+  });
+
   $scope.projects = [
     {
       name: 'shopping-angular',
@@ -42,4 +56,8 @@ app.controller("PortfolioCtrl", ["$scope", function($scope) {
     }
   ]
   $scope.sayings = ['Creative', 'Intelligent', 'Fun', 'Tenacity']
+}])
+
+app.controller("DetailsCtrl", ["$scope", function($scope) {
+  console.log('from Details Ctrl')
 }])

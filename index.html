@@ -15,14 +15,52 @@
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,300,200' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/stylesheets/style.css" />
-  <base href="/">
-
+  <!-- <base href="/"> -->
 </head>
   <body ng-cloak>
 
-   <div ng-controller="PortfolioCtrl">
+   <div>
+     <header>
+       <nav id="navbar">
+         <a ng-href="/#/home">Home</a>
+         <a ng-href="/#/details">App Details</a>
+         <a ng-href="/#/design">Design Work</a>
+         <a ng-href="/#/skills">Skills</a>
+         <a ng-href="/#/about">About</a>
+         <a ng-href="/#/contact">Contact</a>
+       </nav>
+     </header>
 
-   <div class="welcome resize animated fadeInLeft svg-container">
+    <div class="spacer"></div>
+
+     <svg class="nav" viewBox="0 0 1000 250" version="1.1"
+      baseProfile="basic"
+      width="100%" height="200"
+      xmlns="http://www.w3.org/2000/svg">
+
+        <rect width="100%" height="100%" fill="#af0a0a" />
+
+        <path id="my_path" d="M10 80 Q 52.5 10, 95 80 T 180 80" stroke="black" stroke-width="3" transform="translate(240,7) rotate(30)" fill="transparent"/>
+        <svg class="full" height="200">
+         <svg class="full" viewBox="0 -15 1000 200" class="ad">
+            <text y="150" x="500" font-size="150" x="50%" text-anchor="middle" fill="white">Hillary Skye</text>
+         </svg>
+        </svg>
+        <svg class="med" viewBox="0 -45 1000 200" class="ad">
+          <text y="100" x="500" font-size="150" x="50%" text-anchor="middle" fill="white">Hillary Skye</text>
+        </svg>
+        <svg class="small" viewBox="0 -45 1000 300" class="ad">
+          <text y="150" x="500" font-size="150" x="50%" text-anchor="middle" fill="white">Hillary Skye</text>
+        </svg>
+            <text font-size="25" fill="blue">
+
+          <textPath startOffset="0" xlink:href="#my_path">Shannon
+             <animate attributeName="startOffset" values="0;.5;1" dur="8s" repeatCount="indefinite" keyTimes="0;.5;1" />
+          </textPath>
+        </text>
+    </svg>
+
+   <!-- <div class="welcome resize animated fadeInLeft svg-container">
 
     <svg viewBox="0 0 1000 250" version="1.1"
      baseProfile="basic"
@@ -63,7 +101,6 @@
           <img class="img" src="/images/publications-angular.png" alt="">
           <div class="mask">
             <h2>publications-angular</h2>
-            <!-- <p>Type: Galvanize Final Assessment</p> -->
             <p class="desc">Description: The front-end is written using Angular, Node Express
               and includes Restful Routes.  This app was a final exam for the Galvanize program
               and an exercise in writing code, without copying code for an 8 hour time frame.
@@ -82,7 +119,6 @@
             <img class="img" src="/images/{{project.name}}.png" alt="">
             <div class="mask">
               <h2>{{project.name}}</h2>
-              <!-- <p>Type: {{project.type}}</p> -->
               <p class="desc">Description: {{project.desc}}</p>
               <div class="href">
                 <a ng-href="{{project.url}}"><i class="{{project.icon}}"> </i>&nbsp;{{project.name}}</a>
@@ -91,8 +127,8 @@
               </div>
           </div>
         </div>
-    </section>
-<main>
+    </section> -->
+  <!-- <main>
     <footer>
       <nav>
         <li>Hillary Shannon Skye</li>
@@ -104,12 +140,13 @@
       </nav>
       <nav class="title">Front-end Developer</nav>
 
-  </footer>
-</main>
+    </footer>
+  </main> -->
     <div ng-view class="view"></div>
+
     <script src="/js/ang.js"></script>
-<!--     <script src="/js/routes.js"></script>
- -->    <script src="/js/controllers.js"></script>
+    <script src="/js/routes.js"></script>
+    <script src="/js/controllers.js"></script>
 
 </body>
 </html>
