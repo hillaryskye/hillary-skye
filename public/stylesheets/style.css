@@ -473,7 +473,6 @@ nav li:after {
 nav a {
   font-size: 1.1em;
   font-weight: 400;
-  float: right;
   margin-left: 20px;
 }
 header nav a:hover {
@@ -485,6 +484,16 @@ header nav a:hover {
   top: -55px;
   left: 100px;
   z-index: 10;
+}
+.navigation {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
 }
 html {
   font-size: 1em; }
@@ -998,6 +1007,7 @@ th {
   footer {
     top: 200px;
   }
+}
 
 @media(Max-width:900px){
   .resize {
@@ -1047,6 +1057,13 @@ th {
   footer .title {
     font-size: 1.3em;
   }
+  header nav {
+    padding-right: 0;
+  }
+  nav a {
+    margin-left: 0;
+    font-size: .9em;
+  }
 }
 
 @media(Max-width:600px) {
@@ -1064,24 +1081,26 @@ th {
   .project mask {
     min-height: 80%;
   }
-  /*.project h2 {
-    font-size: 16px;
-  }
-  section.module p {
-    font-size: 14px;
-  }*/
 
-  /*footer .fa {
-    font-size: .7em;
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
   }
 
-  footer .title {
-    font-size: 1.0em;
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
   }
 
-  h5 {
-    font-size: 1.0em;
-  }*/
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+  .nav {
+    display: none;
+  }
 }
 
 /*@media(Max-width:500px){
