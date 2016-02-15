@@ -360,7 +360,7 @@ section.module.parallax {
 section.module.parallax-1 {
   z-index: -100;
   /*background-image: url("/images/chicago_2048.jpg");*/
-  background-image: url("/images/coloradoSunrise.jpg");
+  background-image: url("/images/colorado-sunrise.jpg");
   /*background-image: url("/images/colorado2.jpg");*/
   /*background-image: url("/images/colorado-dallas.jpg");*/
 
@@ -503,7 +503,7 @@ html {
 body {
   z-index: -100;
   background-color: #c7d1ea;
-  background-image: url("/images/coloradoSunrise.jpg");
+  background-image: url("/images/colorado-sunrise.jpg");
   /*background-image: url("/images/colorado-dallas.jpg");*/
 
   height: 600px;
