@@ -358,7 +358,7 @@ section.module.parallax {
   background-size: cover; }
 
 section.module.parallax-1 {
-  z-index: -2;
+  z-index: -100;
   /*background-image: url("/images/chicago_2048.jpg");*/
   background-image: url("/images/coloradoSunrise.jpg");
   /*background-image: url("/images/colorado2.jpg");
@@ -500,7 +500,7 @@ html {
   font-size: 1em; }
 
 body {
-  z-index: -2;
+  z-index: -100;
   background-color: #c7d1ea;
   background-image: url("/images/coloradoSunrise.jpg");
   /*background-image: url("/images/colorado2.jpg");
