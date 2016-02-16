@@ -308,6 +308,10 @@ footer {
   bottom: 20px;
   top: 400px; }
 
+footer li {
+list-style: none;
+}
+
 .github {
   margin-left: 5px; }
 
@@ -1093,6 +1097,9 @@ th {
   nav a {
     margin-left: 0;
     font-size: .9em;
+  }
+  footer nav.hide {
+    display: block;
   }
 }
 
