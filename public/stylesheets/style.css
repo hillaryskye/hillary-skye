@@ -470,16 +470,23 @@ nav li, article li {
 nav li:after {
   content: "";
   display: table;
-  clear: both; }
-nav a {
+  clear: both;
+}
+#navbar nav a {
   font-size: 1.1em;
   font-weight: 400;
   margin-left: 20px;
+  display: block
+}
+
+#navbar {
+  /*display: none;*/
 }
 header nav a:hover {
   padding: 7px 10px;
 }
-.nav {
+
+.logo {
   position: fixed;
   width: 18%;
   top: -55px;
@@ -496,6 +503,28 @@ header nav a:hover {
   -webkit-flex-flow: row wrap;
   justify-content: flex-end;
 }
+#hamburger {
+  cursor: pointer;
+  font-size: 2rem;
+  float: right;
+  position: fixed;
+  right: 50;
+  right: 50px;
+  top: 20px;
+  z-index: 2;
+}
+#hamburger {
+  display: none;
+}
+.blue {
+  color: blue;
+  transitiion: all .3s ease;
+}
+
+.hide {
+  /*display: none;*/
+}
+
 html {
   font-size: 1em; }
 
@@ -1098,9 +1127,9 @@ th {
   .navigation li:last-of-type a {
     border-bottom: none;
   }
-  .nav {
+  /*.logo {
     display: none;
-  }
+  }*/
   nav a {
     font-size: .9em;
   }
@@ -1108,6 +1137,15 @@ th {
     margin-top: 75px;
     width: 80%;
   }
+  #hamburger {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+  /*#navbar.hide {
+    display: block;
+  }*/
 }
 
 /*@media(Max-width:500px){

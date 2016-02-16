@@ -17,6 +17,14 @@ app.controller("PortfolioCtrl", ["$scope", function($scope) {
      });
   });
 
+  jQuery(document).ready(function() {
+    jQuery('#hamburger').click(function(e) {
+        jQuery(this).toggleClass('blue');
+        jQuery('nav').toggleClass('hide');
+        e.preventDefault();
+    });
+});
+
   $scope.projects = [
     {
       name: 'shopping-angular',
@@ -60,4 +68,17 @@ app.controller("PortfolioCtrl", ["$scope", function($scope) {
 
 app.controller("DetailsCtrl", ["$scope", function($scope) {
   console.log('from Details Ctrl')
+}])
+
+app.controller("DesignCtrl", ["$scope", function($scope) {
+  console.log('from Design Ctrl')
+}])
+app.controller("ContactCtrl", ["$scope", function($scope) {
+  console.log('from Contact Ctrl')
+}])
+app.controller("AboutCtrl", ["$scope", function($scope) {
+  console.log('from About Ctrl')
+}])
+app.controller("SkillsCtrl", ["$scope", function($scope) {
+  console.log('from Skills Ctrl')
 }])
