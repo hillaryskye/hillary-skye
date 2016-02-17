@@ -3,6 +3,7 @@ app.controller("PortfolioCtrl", ["$scope", function($scope) {
 
   console.log('two')
 
+// jQuery for changing nav color from white to black on scroll
   $(document).ready(function(){
      var scroll_start = 0;
      var startchange = $('#startchange');
@@ -17,6 +18,7 @@ app.controller("PortfolioCtrl", ["$scope", function($scope) {
      });
   });
 
+// jQuery for hamburger responsive functionality
   jQuery(document).ready(function() {
     jQuery('#hamburger').click(function(e) {
         jQuery(this).toggleClass('blue');

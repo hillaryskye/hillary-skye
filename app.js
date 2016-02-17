@@ -25,12 +25,6 @@ app.use(function(req, res) {
   res.sendFile(__dirname + '/index.html');
 });
 
-// app.use('/details', details);
-
-
-// var port = process.env.PORT || 3000;
-
-
 app.listen(process.env.PORT || 3000, function(){
    console.log('listening port 3000');
 });
