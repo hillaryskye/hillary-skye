@@ -1118,6 +1118,7 @@ th {
     width: 100%;
     min-height: 200px;
     padding-bottom: 150px;
+    height: 455px;
   }
   .project mask {
     min-height: 80%;
