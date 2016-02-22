@@ -4,8 +4,28 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
           templateUrl: 'partials/home.html',
           controller: 'PortfolioCtrl'
         })
-        .when('/details', {
-          templateUrl: 'partials/details.html',
+        // .when('/details', {
+        //   templateUrl: 'partials/details.html',
+        //   controller: 'DetailsCtrl'
+        // })
+        .when('/details/publications', {
+          templateUrl: 'partials/details/publications.html',
+          controller: 'DetailsCtrl'
+        })
+        .when('/details/shopping-angular', {
+          templateUrl: 'partials/details/shopping-angular.html',
+          controller: 'DetailsCtrl'
+        })
+        .when('/details/reddit-firebase-angular', {
+          templateUrl: 'partials/details/reddit-firebase-angular.html',
+          controller: 'DetailsCtrl'
+        })
+        .when('/details/tuneset', {
+          templateUrl: 'partials/details/tuneset.html',
+          controller: 'DetailsCtrl'
+        })
+        .when('/details/mixer', {
+          templateUrl: 'partials/details/mixer.html',
           controller: 'DetailsCtrl'
         })
         .when('/design', {

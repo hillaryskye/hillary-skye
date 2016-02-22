@@ -150,18 +150,28 @@ img:after {
   top: 20px;
   left: 50px;
   margin-top: -20px;
-  /*padding-left: 25px;*/
   width: 80%;
   /*height: 360px;*/
-  min-height: 315px;
+  /*min-height: 315px;*/
+  max-height: 98%;
+  min-height: 90%;
 }
+/*.mask {
+  flex: 1;
+	min-width: 600px;
+	max-width: 1080px;
+	min-height: calc(690px * (90/150));
+	height: 90vh;
+	width: 150vh;
+}*/
+
 .project .mask2 {
   background-color: rgba(245,245,220, 0.9);
   overflow: hidden;
   margin-top: -20px;
   margin-left: 50px;
   width: 87%;
-  min-height: 360px;
+  /*min-height: 360px;*/
 }
 .project .img {
     display: block;
@@ -179,12 +189,22 @@ img:after {
 }
 .project p {
     font-style: italic;
-    font-size: 12px;
+    font-size: 1.1em;
     position: relative;
     padding: 0 20px 0 20px;
     text-align: center;
-    height: 120px;
+    /*height: 120px;*/
     overflow: hidden;
+}
+
+.project .mask3 {
+  min-height: 459px;
+}
+.project .mask4 {
+  min-height: 405px;
+}
+.project .mask5 {
+  min-height: 430px;
 }
 .project a.href {
     display: inline-block;
@@ -339,7 +359,8 @@ a:after {
   font-size: 1.6em; }
 
 .container {
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 section.module:last-child {
   margin-bottom: 0; }
@@ -444,6 +465,16 @@ label {
     text-decoration: none;
     transition: 300ms ease all;
   }
+  p, ul li {
+    /*color: white;*/
+    color: #114fe0;
+    color: rgba(0,53,131, .9);
+    color: rgba(20, 81, 186, .9);
+    /*float: left;*/
+    /*width: 80%;*/
+    /*margin-left: 50px;*/
+    font-size: .9em;
+    padding-left: 0px; }
 
 .spacer{
    /*height:200px;*/
@@ -454,19 +485,96 @@ header {
   text-align: center; }
 
 header nav {
-  list-style: none;
-  margin: 0 auto;
-
-  position: fixed;
-  top: 0;
-  right: 0;
-  background: rgba(255, 255, 255, .7);
-  padding: 25px;
-  width: 100%;
-  z-index: 1;
-  padding-right: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
+/* styling for dropdown navbar */
+#navbar {
+  background: rgba(255, 255, 255, .7);
+	padding: 20px 50px;
+}
+#navbar ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+#navbar ul li {
+    display:inline-block;
+    position:relative;
+}
+
+/* sub navigation */
+#navbar li ul {
+    background-color: rgba(175,10,10,.9);
+    position:absolute;
+    left:30px;
+    top:40px; /* make this equal to the line-height of the links (specified below) */
+    width:200px;
+}
+#navbar li li {
+    position:relative;
+    margin:0;
+    display:block;
+}
+#navbar li li ul {
+    position:absolute;
+    top:0;
+    left:200px; /* make this equal to the width of the sub nav above */
+    margin:0;
+    border: 3px solid yellow;
+}
+
+/* style all links */
+#navbar a {
+    line-height:40px;
+    padding:0 10px;
+    /*margin:0 12px;*/
+    color: #af0a0a;
+    text-decoration:none;
+}
+
+#navbar a:hover,
+/*#navbar a:focus,*/
+#navbar a:active {
+    color: white;
+    background: #114fe0;
+    background: #3A4766;
+    background: rgba(0,53,131, .7);
+}
+
+/* style sub level links */
+#navbar li li a {
+    border-bottom:solid 1px rgb(200,50,50);
+    /*margin:0 10px;*/
+    /*padding:0;*/
+    width: 100%;
+    text-align: left;
+    color: white;
+}
+#navbar li li:last-child a {
+    border-bottom:none;
+}
+
+/* hide sub menu links */
+ul.sub-menu {
+    display:none;
+}
+
+span {
+  color: #af0a0a;
+}
+span:hover {
+  color: white;
+}
+#navbar .fa {
+  padding-left: 5px;
+}
+#navbar li {
+  color: #af0a0a;
+}
 nav li, article li {
   list-style: none;
 }
@@ -486,15 +594,15 @@ nav li:after {
 #navbar {
   /*display: none;*/
 }
-header nav a:hover {
+/*header nav a:hover {
   padding: 7px 10px;
-}
+}*/
 
 .logo {
   position: fixed;
   width: 18%;
   top: -55px;
-  left: 100px;
+  left: 50px;
   z-index: 10;
 }
 .navigation {
@@ -535,8 +643,6 @@ html {
 body {
   background-color: #c7d1ea;
   background-image: url("/images/colorado-sunrise.jpg");
-  /*background-image: url("/images/colorado-dallas.jpg");*/
-
   height: 600px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -557,24 +663,16 @@ article {
   float: left;
   height: 25px; }
 
-p, ul li {
-  /*color: white;*/
-  color: #114fe0;
-  float: left;
-  /*width: 80%;*/
-  /*margin-left: 50px;*/
-  font-size: .9em;
-  padding-left: 10px; }
-
 p:after {
   content: "";
   display: table;
   clear: both; }
 
 p:hover {
-  color: #114fe0; }
+  color: #114fe0;
+}
 
-ul li {
+.mask2 ul li {
   font-size: 1.1em;
   width: 100%;
 }
@@ -603,8 +701,22 @@ h2 {
   margin-left: 50px; }
 
 h3 {
-  margin-left: 10px;
-  font-size: 1.3em; }
+  font-weight: inherit;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  width: 25%;
+  text-align: center;
+  margin: 20px auto;
+}
+.shopping {
+  width: 30%;
+}
+.reddit {
+  width: 35%;
+}
 
 h4 {
   float: left;
@@ -640,10 +752,8 @@ a:after {
 
 a:hover, button:hover {
   color: #fff;
-  background: #114fe0; }
-
-span {
-  color: #482ACF; }
+  background: #114fe0;
+  background: rgba(0,53,131, .8); }
 
 .center {
   text-align: center; }
@@ -1027,7 +1137,10 @@ th {
     display: none;
   }
   .project {
-    height: 455px;
+    min-height: 455px;
+  }
+  .project mask5 {
+    height: 100%;
   }
   .project .mask {
     /*min-height: 235px;*/
@@ -1037,7 +1150,7 @@ th {
   }
 
   section.module p {
-    font-size: 16px;
+    font-size: 1em;
   }
   section.module.parallax {
     height: 0;
@@ -1075,6 +1188,8 @@ th {
     min-height: 100%;
     margin-left: 60px;
     width: 75%;
+    max-height: 98%;
+    min-height: 80%;
   }
   .project h2 {
     font-size: 18px;
@@ -1085,7 +1200,7 @@ th {
   }
 
   section.module p {
-    font-size: 16px;
+    font-size: 1em;
   }
 
   footer .fa {
@@ -1118,16 +1233,18 @@ th {
     width: 100%;
     min-height: 200px;
     padding-bottom: 150px;
-    height: 455px;
+    min-height: 455px;
   }
   .project mask {
     min-height: 80%;
+    max-height: 98%;
   }
 
-  .navigation {
+  #navbar .navigation {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
     padding: 0;
+    display: -webkit-box;
   }
 
   .navigation a {
@@ -1139,9 +1256,9 @@ th {
   .navigation li:last-of-type a {
     border-bottom: none;
   }
-  /*.logo {
-    display: none;
-  }*/
+#navbar {
+    padding: 20px 15px;
+  }
   nav a {
     font-size: .9em;
   }
@@ -1149,53 +1266,21 @@ th {
     margin-top: 75px;
     width: 80%;
   }
+  h3 {
+    width: 60%;
+  }
+  .shopping {
+    width: 80%;
+  }
+  .reddit {
+    width: 90%;
+  }
   #hamburger {
     display: block;
+    /*padding: 0px 5px;*/
+    right: 20px;
   }
   .hide {
     display: none;
   }
-  /*#navbar.hide {
-    display: block;
-  }*/
 }
-
-/*@media(Max-width:500px){
-  footer .fa {
-    font-size: .7em;
-  }
-
-  footer .title {
-    font-size: 1.0em;
-  }
-
-  footer .show {
-    padding: 3px 3px;
-  }
-
-  li {
-    font-size: .9em;
-  }
-}*/
-
-/*@media(Max-width:400px){
-  .resize {
-    width: 100%;
-    border: none;
-  }
-  .full {
-    display: none;
-  }
-  .med {
-    display: none;
-  }
-  .small {
-    display: inline;
-  }
-  .project h2 {
-    font-size: 16px;
-  }
-  section.module p {
-    font-size: 12px;
-  }
-}*/

@@ -25,12 +25,22 @@
 			    <i class="fa fa-bars"></i>
 		  </div>
        <nav id="navbar" class="navigation hide">
-         <a ng-href="/#/home">Home</a>
-         <a ng-href="/#/details">App Details</a>
-         <a ng-href="/#/design">Design Work</a>
-         <a ng-href="/#/skills">Skills</a>
-         <a ng-href="/#/about">About</a>
-         <a ng-href="/#/contact">Contact</a>
+           <li><a ng-href="/#/home">Home</a></li>
+           <ul>
+             <li class="dropdown"><a ng-href="/#/details">App Details<i class="fa fa-caret-down"></i></a>
+             <ul class="sub-menu">
+                <li><a href="/#/details/publications">Publications App</a></li>
+                <li><a href="/#/details/shopping-angular">Shopping Angular</a></li>
+                <li><a href="/#/details/reddit-firebase-angular">Reddit Firebase Angular</a></li>
+                <li><a href="/#/details/tuneset">Tuneset</a></li>
+                <li><a href="/#/details/mixer">Mixer</a></li>
+              </ul>
+            </li>
+           <li><a ng-href="/#/design">Design Work</a></li>
+           <li><a ng-href="/#/skills">Skills</a></li>
+           <li><a ng-href="/#/about">About</a></li>
+           <li><a ng-href="/#/contact">Contact</a></li>
+       </ul>
        </nav>
      </header>
 
