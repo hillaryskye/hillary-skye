@@ -23,15 +23,15 @@ app.factory('PortfolioService', function () {
       icon: 'fa fa-reddit',
       github: 'https://github.com/hillaryskye/reddit-firebase-angular'
     },
-    {
-      name: 'tuneSet',
-      type: 'Personal Project',
-      url: 'https://stormy-waters-7608.herokuapp.com/',
-      desc: 'TuneSet creates Traditional Irish abc music files, which include the name of the tune, the type of which it is a jig or a reel, the key, and other info about the tune. A page generates, which the abc music notated into musical printed material. Another page shows you dynamically key choices through TheSession.org\'s API and returns a list of tunes and the user can choose a tune, which generates another page that shows all of the tunes in their collection of tunes from a database.',
-      image: 'tuneSet.png',
-      icon: 'fa fa-music',
-      github: 'https://github.com/hillaryskye/tuneSet'
-    },
+    // {
+    //   name: 'tuneSet',
+    //   type: 'Personal Project',
+    //   url: 'https://stormy-waters-7608.herokuapp.com/',
+    //   desc: 'TuneSet creates Traditional Irish abc music files, which include the name of the tune, the type of which it is a jig or a reel, the key, and other info about the tune. A page generates, which the abc music notated into musical printed material. Another page shows you dynamically key choices through TheSession.org\'s API and returns a list of tunes and the user can choose a tune, which generates another page that shows all of the tunes in their collection of tunes from a database.',
+    //   image: 'tuneSet.png',
+    //   icon: 'fa fa-music',
+    //   github: 'https://github.com/hillaryskye/tuneSet'
+    // },
     {
       name: 'mixer',
       type: 'Hackathon inspired Project',

@@ -1,0 +1,23 @@
+<!-- Created in illustrator as a logo -->
+<!-- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 792 1224" style="enable-background:new 0 0 792 1224;" xml:space="preserve">
+<style type="text/css">
+.st0{fill:#AF0A0A;}
+.st1{fill:#FFFFFF;}
+.st2{font-family:'Raleway-Bold';}
+.st3{font-size:150px;}
+.st4{fill:#2E3192;}
+.st5{fill:none;stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
+</style>
+<rect x="-94.1" y="173" class="st0" width="1000" height="250"/>
+<text transform="matrix(1 0 0 1 -19.425 344.9564)" class="st1 st2 st3">Hillary Skye</text>
+<rect x="99" y="233.8" class="st0" width="30.9" height="22.6"/>
+<circle class="st4" cx="111.4" cy="245.1" r="10.2"/>
+<path id="my_path" class="st5" d="M202.4,346.8c-15.6,14.5-40,13.7-54.5-1.9c-8.6-9.2-7.8-34.6-3-55.2
+c3.3-14.2,7.1-28.3,9.9-42.6c5.2-26.4-12-52.1-35.1-54.9c-23.8-3-45.5,22-48.5,45.8"/>
+<text class="st4" style="font-family:'MyriadPro-Regular'; font-size:25px;">
+<textPath  xlink:href="#my_path" startOffset="0">Shannon
+<animate attributeName="startOffset" values="0;.5;1" dur="8s" repeatCount="indefinite" keyTimes="0;.5;1" />
+</textPath>
+</text>
+</svg> -->
