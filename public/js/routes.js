@@ -20,10 +20,10 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
           templateUrl: 'partials/details/reddit-firebase-angular.html',
           controller: 'DetailsCtrl'
         })
-        .when('/details/tuneset', {
-          templateUrl: 'partials/details/tuneset.html',
-          controller: 'DetailsCtrl'
-        })
+        // .when('/details/tuneset', {
+        //   templateUrl: 'partials/details/tuneset.html',
+        //   controller: 'DetailsCtrl'
+        // })
         .when('/details/mixer', {
           templateUrl: 'partials/details/mixer.html',
           controller: 'DetailsCtrl'
