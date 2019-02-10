@@ -46,14 +46,22 @@ app.factory('PortfolioService', function () {
   ProjectList.designs = [
     {
       name: 'Logo First Design',
-      type: 'Portfolio: Logo Design',
-      url: 'https://codepen.io/hillaryskye/pen/zeWKWX',
+      type: 'Portfolio: Logo Design #1',
+      codepen: 'https://codepen.io/hillaryskye/pen/zeWKWX',
       desc: 'This design was my first attempt at using text on a path using SVG with SMIL',
-      image: 'portfolioLogo.png',
+      image: 'portfolioLogo',
       icon: 'fa fa-coffee',
-      github: '',
-      codepen: 'https://codepen.io/hillaryskye/pen/zeWKWX'
-    }]
+      github: ''
+    },
+    {
+      name: 'Logo Second Design',
+      type: 'Portfolio: Logo Design #2',
+      codepen: 'https://codepen.io/hillaryskye/pen/zeWKWX',
+      desc: 'This design was my second attempt at using text on a path using SVG with SMIL and I added @keyframes with CSS for the affect with the name scrolling affect',
+      iimage: 'portolioLogo22',
+      icon: 'fa fa-coffee',
+      github: ''
+  }]
   console.log('1.5 from services')
 
   return ProjectList;
