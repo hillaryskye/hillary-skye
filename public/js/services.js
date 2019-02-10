@@ -48,10 +48,10 @@ app.factory('PortfolioService', function () {
       name: 'Logo First Design',
       type: 'Portfolio: Logo Design',
       url: 'https://codepen.io/hillaryskye/pen/zeWKWX',
-      desc: 'This deisgn was my first attempt at using text on a path using SVG with SMIL',
+      desc: 'This design was my first attempt at using text on a path using SVG with SMIL',
       image: 'portfolioLogo.png',
       icon: 'fa fa-coffee',
-      github: 'https://github.com/hillaryskye/shopping-angular'
+      github: ''
     }]
   console.log('1.5 from services')
 
