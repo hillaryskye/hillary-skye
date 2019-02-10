@@ -51,7 +51,8 @@ app.factory('PortfolioService', function () {
       desc: 'This design was my first attempt at using text on a path using SVG with SMIL',
       image: 'portfolioLogo.png',
       icon: 'fa fa-coffee',
-      github: ''
+      github: '',
+      codepen: 'https://codepen.io/hillaryskye/pen/zeWKWX'
     }]
   console.log('1.5 from services')
 
