@@ -28,9 +28,13 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
           templateUrl: 'partials/details/mixer.html',
           controller: 'DetailsCtrl'
         })
-        .when('/design', {
+        .when('/designs', {
           templateUrl: 'partials/designs.html',
-          controller: 'DesignCtrl'
+          controller: 'DesignsCtrl'
+        })
+        .when('/designDetails', {
+          templateUrl: 'partials/designs/portfolioLogoFirst.html',
+          controller: 'DesignDetailsCtrl'
         })
         .when('/contact', {
           templateUrl: 'partials/contact.html',

@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!-- <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="2S" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 792 1224" style="enable-background:new 0 0 792 1224;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#AF0A0A;}
@@ -29,4 +29,4 @@
 <text transform="matrix(1 0 0 1 82.8062 62.7437)" class="st4 st6 st7"> </text>
 <text transform="matrix(1 0 0 1 86.1324 66.8707)" class="st8 st6 st7"> <animate  accumulate="none" additive="replace" attributeName="startOffset" calcMode="linear" dur="8s" fill="remove" keyTimes="0;.5;1" repeatCount="indefinite" restart="always" values="0;.5;1"></animate></text>
 <text class="st4 st6 st7"> </text>
-</svg>
+</svg> -->

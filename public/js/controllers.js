@@ -1,5 +1,5 @@
 app.controller("PortfolioCtrl", ["$scope", "PortfolioService", function($scope, PortfolioService) {
-  console.log('from controller')
+  console.log('from PortfolioController')
 
   console.log('two')
 
@@ -41,20 +41,24 @@ $(document).ready(function(){
     }
   }); // end ready
 
-$scope.projects = PortfolioService.projects
+$scope.projects = PortfolioService.projects;
+
 console.log('three')
 
   $scope.sayings = ['Creative', 'Intelligent', 'Fun', 'Tenacity']
-}])
-
+}]);
 
 app.controller("DetailsCtrl", ["$scope", function($scope) {
   console.log('from Details Ctrl')
 }])
+// app.controller("DesignDetailsCtrl", ["$scope", "PortfolioService", function($scope, PortfolioService) {
+//   console.log('from DesignDetails Ctrl')
+// }])
 
-app.controller("DesignCtrl", ["$scope", function($scope) {
-  console.log('from Design Ctrl')
-}])
+app.controller("DesignsCtrl", ["$scope", "PortfolioService", function($scope, PortfolioService) {
+  $scope.designs = PortfolioService.designs;
+  console.log('from Designs Ctrl')
+}]);
 app.controller("ContactCtrl", ["$scope", function($scope) {
   console.log('from Contact Ctrl')
 }])
