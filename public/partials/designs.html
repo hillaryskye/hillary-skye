@@ -4,15 +4,15 @@
               
                 <section class="module content">
                    <div class="container">
-                     <div class="project view-first" ng-repeat="design in designs">
+                     <div id="designs" class="project view-first" ng-repeat="design in designs">
                        <img class="img" src="/images/{{design.image}}.png" alt="">
                        <div class="mask">
                          <h2>{{design.name}}</h2>
                          <p>Type: {{design.type}}</p>
                          <p class="desc">Description: {{design.desc}}</p>
                          <div class="href">
-                           <a ng-href="{{design.codepen}}"><i class="{{design.icon}}"> </i>&nbsp;{{design.name}}</a>
-                           <a ng-href="{{design.github}}"><i class="fa fa-github"></i>&nbsp;github: {{design.name}}</a>
+                           <a ng-href="{{design.codepen}}"><i class="{{design.icon}}"> </i>Codepen</a>
+                           <a ng-href="{{design.details}}"><i class="fa fa-github"></i>Details</a>
                          </div>
                          </div>
                      </div>

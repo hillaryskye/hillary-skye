@@ -48,7 +48,7 @@ console.log('three')
   $scope.sayings = ['Creative', 'Intelligent', 'Fun', 'Tenacity']
 }]);
 
-app.controller("DetailsCtrl", ["$scope", function($scope) {
+app.controller("DetailsCtrl", ["$scope", "PortfolioService", function($scope, PortfolioService) {
   console.log('from Details Ctrl')
 }])
 // app.controller("DesignDetailsCtrl", ["$scope", "PortfolioService", function($scope, PortfolioService) {

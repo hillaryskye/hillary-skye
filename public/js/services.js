@@ -49,9 +49,9 @@ app.factory('PortfolioService', function () {
       type: 'Portfolio: Logo Design #1',
       codepen: 'https://codepen.io/hillaryskye/pen/zeWKWX',
       desc: 'This design was my first attempt at using text on a path using SVG with SMIL',
-      image: 'portfolioLogo',
+      image: 'portfolioLogo12',
       icon: 'fa fa-coffee',
-      github: ''
+      details: '/#/designDetails/portfolioLogo1'
     },
     {
       name: 'Logo Second Design',
@@ -60,7 +60,7 @@ app.factory('PortfolioService', function () {
       desc: 'This design was my second attempt at using text on a path using SVG with SMIL and I added @keyframes with CSS for the affect with the name scrolling affect',
       image: 'portfolioLogo22',
       icon: 'fa fa-coffee',
-      github: ''
+      details: '/#/designDetails/portfolioLogo2'
   }]
   console.log('1.5 from services')
 
