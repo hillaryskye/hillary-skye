@@ -40,6 +40,14 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
           templateUrl: 'partials/designs/portfolioLogo2.html',
           controller: 'DetailsCtrl'
         })
+        .when('/designDetails/wireframe2', {
+          templateUrl: 'partials/designs/wireframe2.html',
+          controller: 'DetailsCtrl'
+        })
+        .when('/designDetails/wireframe3', {
+          templateUrl: 'partials/designs/wireframe3.html',
+          controller: 'DetailsCtrl'
+        })
         .when('/contact', {
           templateUrl: 'partials/contact.html',
           controller: 'ContactCtrl'
