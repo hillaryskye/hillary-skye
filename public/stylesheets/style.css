@@ -232,14 +232,6 @@ img:after {
   max-height: 98%;
   min-height: 90%;
 }
-/*.mask {
-  flex: 1;
-	min-width: 600px;
-	max-width: 1080px;
-	min-height: calc(690px * (90/150));
-	height: 90vh;
-	width: 150vh;
-}*/
 
 .project .mask2 {
   background-color: rgba(245,245,220, 0.9);
@@ -344,6 +336,10 @@ img:after {
 .text-align {
   padding-right: 20px;
   text-align: right;
+}
+#center-box {
+  float: none;
+  margin: auto;
 }
 
 .project {
