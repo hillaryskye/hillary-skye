@@ -233,12 +233,16 @@ img:after {
   min-height: 90%;
 }
 
+.padding-top20 {
+  padding-top: 20px;
+}
+
 .project .mask2 {
   background-color: rgba(245,245,220, 0.9);
   overflow: hidden;
-  margin-top: -20px;
+  /* margin-top: -20px;
   margin-left: 50px;
-  width: 87%;
+  width: 87%; */
   /*min-height: 360px;*/
 }
 .project .img {
@@ -341,14 +345,31 @@ img:after {
   float: none;
   margin: auto;
 }
+.center-box2 {
+  float: none;
+  width: 50%;
+  padding-bottom: 20px;
+}
+
+#center-box3 {
+  left: 0;
+  width: 85%;
+  margin: auto;
+}
+
+.center-box4 {
+  width: 96%;
+  text-align: center;
+}
 
 .project {
   background: rgba(0,0,0,.7);
   float: left;
   width: 50%;
   position: relative;
-  padding-bottom: 45px;
-  padding-top: 45px;
+  /* padding-bottom: 45px;
+  padding-top: 45px; */
+  padding: 45px;
   border-top: 1px solid rgba(255,255,255,0.3);
   border-bottom: 1px solid rgba(0,0,0,0.1);
 }
@@ -818,6 +839,11 @@ a:hover, button:hover {
 .center {
   text-align: center; }
 
+.center-width96 {
+  text-align: center;
+  width: 96%;
+}
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -1239,12 +1265,13 @@ th {
     width: 100%;
     min-height: 200px;
     padding-bottom: 80px;
-    padding-left: 60px;
+    /* padding-left: 60px; */
   }
   .project .mask {
     /*min-height: 450px;*/
     min-height: 100%;
-    margin-left: 60px;
+    /* margin-left: 60px; */
+    margin-left: 10%;
     width: 75%;
     max-height: 98%;
     min-height: 80%;

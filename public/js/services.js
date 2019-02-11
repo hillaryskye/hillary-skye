@@ -61,7 +61,23 @@ app.factory('PortfolioService', function () {
       image: 'portfolioLogo22',
       icon: 'fa fa-paint-brush',
       details: '/#/designDetails/portfolioLogo2'
-  }]
+  },
+  {
+    name: 'Work Wireframe #1',
+    type: 'Wireframe #1 from a client',
+    desc: 'Redesign of all widgets as head of the design team',
+    image: 'wireframe2',
+    icon: 'fa fa-paint-brush',
+    details: '/#/designDetails/wireframe2'
+},
+{
+  name: 'Work Wireframe #2',
+  type: 'Wireframe #2 from a client',
+  desc: 'Example of Axure Wireframing',
+  image: 'wireframe3',
+  icon: 'fa fa-paint-brush',
+  details: '/#/designDetails/wireframe3'
+}]
   console.log('1.5 from services')
 
   return ProjectList;
