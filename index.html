@@ -22,22 +22,24 @@
 
    <div>
      <header>
-       <div id="hamburger">
+       <div id="hamburger" ng-click="hide = !true; ">
 			    <i class="fa fa-bars"></i>
 		  </div>
-       <nav id="navbar" class="navigation hide">
-           <li><a ng-href="/#/home">Home</a></li>
-           <ul>
+       <nav id="navbar" ng-click="hide = true">
+        <ul ng-class="{hide: hide}">
+            
+           <li><a id="navbar1" ng-href="/#/home">Home</a></li>
+           
              <li class="dropdown"><a ng-href="/#/details">App Details<i class="fa fa-caret-down"></i></a>
              <ul class="sub-menu">
-                <li><a href="/#/details/publications">Publications App</a></li>
-                <li><a href="/#/details/shopping-angular">Shopping Angular</a></li>
-                <li><a href="/#/details/reddit-firebase-angular">Reddit Firebase Angular</a></li>
+                <li><a id="navbar2" href="/#/details/publications">Publications App</a></li>
+                <li><a id="navbar3" href="/#/details/shopping-angular">Shopping Angular</a></li>
+                <li><a id="navbar4" href="/#/details/reddit-firebase-angular">Reddit Firebase Angular</a></li>
                 <!-- <li><a href="/#/details/tuneset">Tuneset</a></li> -->
-                <li><a href="/#/details/mixer">Mixer</a></li>
+                <li><a id="navbar5" href="/#/details/mixer">Mixer</a></li>
               </ul>
             </li>
-           <li><a ng-href="/#/designs">Design Work</a></li>           
+           <li><a id="navbar6" ng-href="/#/designs">Design Work</a></li>           
            <li><a ng-href="/#/skills">Skills</a></li>
            <li><a ng-href="/#/about">About</a></li>
            <li><a ng-href="/#/contact">Contact</a></li>

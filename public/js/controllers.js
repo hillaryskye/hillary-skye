@@ -18,15 +18,6 @@ app.controller("PortfolioCtrl", ["$scope", "PortfolioService", function($scope, 
      });
   });
 
-// jQuery for hamburger responsive functionality
-  jQuery(document).ready(function() {
-    jQuery('#hamburger').click(function(e) {
-        jQuery(this).toggleClass('blue');
-        jQuery('nav').toggleClass('hide');
-        e.preventDefault();
-    });
-});
-
 // // Show and Slide-Down Effect with jQuery
 $(document).ready(function(){
   $('.dropdown').hover(
@@ -41,6 +32,11 @@ $(document).ready(function(){
     }
   }); // end ready
 
+  $scope.click = function() {
+    console.log('clicked on navbar')
+
+  }
+// $scope.menu = PortfolioDirective.menuDropdownDirective;
 $scope.projects = PortfolioService.projects;
 
 console.log('three')
