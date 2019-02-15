@@ -731,7 +731,7 @@ nav li:after {
 }
 
 .hide {
-  /*display: none;*/
+  display: none;
 }
 
 html {
@@ -1411,5 +1411,5 @@ th {
 
   .hide {
     display: none;
-  }
+  } 
 }
