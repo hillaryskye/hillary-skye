@@ -265,8 +265,11 @@ img:after {
     position: relative;
     padding: 0 20px 0 20px;
     text-align: center;
-    /*height: 120px;*/
     overflow: hidden;
+}
+
+.project .about {
+  font-style: normal;
 }
 
 .project .mask3 {
@@ -567,12 +570,8 @@ label {
     font-size: .9em;
     padding-left: 0px; }
 
-.spacer{
-   /*height:200px;*/
-}
-
 header {
-  margin-top: 250px;
+  margin-top: 190px;
   text-align: center; }
 
 header nav {
@@ -1329,7 +1328,7 @@ th {
   }
   #navbar {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
   }
 }
 

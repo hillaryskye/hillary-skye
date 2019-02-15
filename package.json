@@ -1,13 +1,13 @@
 {
   "name": "hillary-skye",
   "version": "1.0.0",
-  "description": "",
+  "description": "Portfolio app for Hillary Skye showing Angular projects and web designs and wireframing examples",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Hillary Skye",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.13.3",
