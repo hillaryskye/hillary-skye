@@ -603,7 +603,7 @@ header nav {
     position:absolute;
     left:30px;
     top:40px; /* make this equal to the line-height of the links (specified below) */
-    width:200px;
+    width:225px;
 }
 #navbar li li {
     position:relative;
@@ -651,11 +651,9 @@ header nav {
 /* style sub level links */
 #navbar li li a {
     border-bottom:solid 1px rgb(200,50,50);
-    /*margin:0 10px;*/
-    /*padding:0;*/
-    width: 100%;
     text-align: left;
     color: white;
+    width: 100%;
 }
 #navbar li li:last-child a {
     border-bottom:none;
@@ -664,6 +662,10 @@ header nav {
 /* hide sub menu links */
 ul.sub-menu {
     display:none;
+}
+
+ul.show {
+  display: block;
 }
 
 span {
@@ -728,10 +730,6 @@ nav li:after {
 .blue {
   color: blue;
   transitiion: all .3s ease;
-}
-
-.hide {
-  display: none;
 }
 
 html {
@@ -1359,7 +1357,8 @@ th {
 
   #navbar li ul {
     top: 20px;
-    left: 50px;
+    left: 40px;
+    z-index: 2;
   }
 
   #navbar ul li {

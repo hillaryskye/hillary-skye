@@ -19,18 +19,18 @@ app.controller("PortfolioCtrl", ["$scope", "PortfolioService", function($scope, 
   });
 
 // // Show and Slide-Down Effect with jQuery
-$(document).ready(function(){
-  $('.dropdown').hover(
-    function(){
-      $(this).children('.sub-menu').slideDown(200,stop());
-    },
-    function(){
-      $(this).children('.sub-menu').slideUp(200,stop());
-    })
-    function stop(){
-      $('.sub-menu').stop(true, true);
-    }
-  }); // end ready
+// $(document).ready(function(){
+//   $('.dropdown').hover(
+//     function(){
+//       $(this).children('.sub-menu').slideDown(200,stop());
+//     },
+//     function(){
+//       $(this).children('.sub-menu').slideUp(200,stop());
+//     })
+//     function stop(){
+//       $('.sub-menu').stop(true, true);
+//     }
+//   }); // end ready
 
   $scope.click = function() {
     console.log('clicked on navbar')

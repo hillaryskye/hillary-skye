@@ -30,10 +30,10 @@
             
            <li><a id="navbar1" ng-href="/#/home">Home</a></li>
            
-             <li class="dropdown"><a ng-href="/#/details">App Details<i class="fa fa-caret-down"></i></a>
-             <ul class="sub-menu">
-                <li><a id="navbar2" href="/#/details/publications">Publications App</a></li>
-                <li><a id="navbar3" href="/#/details/shopping-angular">Shopping Angular</a></li>
+             <li class="dropdown" ng-mouseover="show = true" ng-mouseleave="show = false"><a ng-href="/#/details">App Details<i class="fa fa-caret-down"></i></a>
+             <ul class="sub-menu" ng-class="{show: show}">
+                <li ng-class="{show: show}"><a id="navbar2" href="/#/details/publications">Publications App</a></li>
+                <li ng-class="{show: show}"><a id="navbar3" href="/#/details/shopping-angular">Shopping Angular</a></li>
                 <li><a id="navbar4" href="/#/details/reddit-firebase-angular">Reddit Firebase Angular</a></li>
                 <!-- <li><a href="/#/details/tuneset">Tuneset</a></li> -->
                 <li><a id="navbar5" href="/#/details/mixer">Mixer</a></li>
