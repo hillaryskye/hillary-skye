@@ -1168,9 +1168,7 @@ fieldset {
  */
 legend {
   border: 0;
-  /* 1 */
-  padding: 0;
-  /* 2 */ }
+  padding: 0;}
 
 /**
  * Remove default vertical scrollbar in IE 8/9/10/11.
