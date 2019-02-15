@@ -495,8 +495,8 @@ section.module.parallax-1 {
  */
 /*Animations*/
 h1 {
-  -webkit-animation-duration: 3s;
-  -moz-animation-delay: 2s;
+  animation-duration: 3s;
+  animation-delay: 2s;
   /*    animation-iteration-count: ;
  */ }
 
@@ -709,8 +709,7 @@ nav li:after {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-
-  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
   justify-content: flex-end;
 }
 #hamburger {
@@ -728,7 +727,7 @@ nav li:after {
 }
 .blue {
   color: blue;
-  transitiion: all .3s ease;
+  transition: all .3s ease;
 }
 
 html {
@@ -931,16 +930,7 @@ template {
 
 /* Links
    ========================================================================== */
-/**
- * Remove the gray background color from active links in IE 10.
- */
-a {
-  /*   background-color: transparent;
- */ }
 
-/**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
 a:active,
 a:hover {
   outline: 0; }
@@ -1191,11 +1181,6 @@ optgroup {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
-
-td,
-th {
-  /*   padding: 0;
- */ }
 
 /* Media Queries */
 @media(Min-width:1226px){

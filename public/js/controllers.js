@@ -1,7 +1,4 @@
 app.controller("PortfolioCtrl", ["$scope", "PortfolioService", function($scope, PortfolioService) {
-  console.log('from PortfolioController')
-
-  console.log('two')
 
 // jQuery for changing nav color from white to black on scroll
   $(document).ready(function(){
@@ -39,13 +36,11 @@ app.controller("PortfolioCtrl", ["$scope", "PortfolioService", function($scope, 
 // $scope.menu = PortfolioDirective.menuDropdownDirective;
 $scope.projects = PortfolioService.projects;
 
-console.log('three')
-
   $scope.sayings = ['Creative', 'Intelligent', 'Fun', 'Tenacity']
 }]);
 
 app.controller("DetailsCtrl", ["$scope", "PortfolioService", function($scope, PortfolioService) {
-  console.log('from Details Ctrl')
+ 
 }])
 // app.controller("DesignDetailsCtrl", ["$scope", "PortfolioService", function($scope, PortfolioService) {
 //   console.log('from DesignDetails Ctrl')
@@ -53,14 +48,13 @@ app.controller("DetailsCtrl", ["$scope", "PortfolioService", function($scope, Po
 
 app.controller("DesignsCtrl", ["$scope", "PortfolioService", function($scope, PortfolioService) {
   $scope.designs = PortfolioService.designs;
-  console.log('from Designs Ctrl')
 }]);
 app.controller("ContactCtrl", ["$scope", function($scope) {
-  console.log('from Contact Ctrl')
+  
 }])
 app.controller("AboutCtrl", ["$scope", function($scope) {
-  console.log('from About Ctrl')
+  
 }])
 app.controller("SkillsCtrl", ["$scope", function($scope) {
-  console.log('from Skills Ctrl')
+  
 }])
