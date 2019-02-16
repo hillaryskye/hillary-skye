@@ -4,13 +4,8 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var serveStatic = require('serve-static');
-// var details = require('./routes/details');
-// var routes = require('./routes/index');
-// require('dotenv').load()
 
 var app = express();
-
 
 var cors = require('cors')
 app.use(cors())
@@ -22,17 +17,12 @@ app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname + '/public')));
 
-
 app.use(function(req, res) {
   res.sendFile(__dirname + '/index.html');
 });
-// app.get('/', function(req, res) {
-//   res.render(__dirname + '/public', {});
-// })
 
 app.listen(process.env.PORT || 3000, function(){
    console.log('listening port 3000');
 });
-
 
 module.exports = app;
