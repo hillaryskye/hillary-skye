@@ -23,11 +23,12 @@
    <div>
      <header>
        <div id="hamburger" ng-click="hide = !true; ">
-			    <i class="fa fa-bars"></i>
+          <i class="fa fa-bars"></i>
+          <img src="/images/profile1.png" alt="profile pic">
 		  </div>
-       <nav id="navbar" ng-click="hide = true">
-        <ul ng-class="{hide: hide}">
-            
+       <nav id="navbar" ng-click="hide = true" scroll-position="scroll" ng-class="{smaller: scroll > 50, big: scroll >=50}">
+        <ul ng-class="{hide: hide, smaller: scroll < 50, big: scroll >=50}">
+             
            <li><a id="navbar1" ng-href="/#/home">Home</a></li>
            
              <li class="dropdown" ng-mouseover="show = true" ng-mouseleave="show = false"><a ng-href="/#/details">App Details<i class="fa fa-caret-down"></i></a>
@@ -48,7 +49,7 @@
      </header>
      </div>
 
-    <div class="spacer"></div>
+    <!-- <div class="spacer"></div> -->
 
 <!-- Small Logo for top left corner of each page -->
      <!--<svg class="logo" viewBox="0 0 1000 250" version="1.1"
@@ -81,5 +82,6 @@
     <script src="/js/routes.js"></script>
     <script src="/js/controllers.js"></script>
     <script src="/js/services.js"></script>
+    <script src="/js/directives.js"></script>
 </body>
 </html>

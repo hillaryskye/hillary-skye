@@ -436,7 +436,7 @@ section.module.content {
   padding: 40px 0; }
 
 section.module.parallax {
-  height: 200px;
+  height: 100px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -524,6 +524,19 @@ header nav {
 #navbar {
   background: rgba(255, 255, 255, .7);
 	padding: 20px 50px;
+}
+
+#navbar.smaller {
+  background-color: rgba(255,255,255,.7);
+}
+
+#navbar.big {
+  background-color: rgba(0,0,0,.8);
+  color: #fff;
+}
+
+#navbar.big a, #navbar.big i {
+  color: #eae6e6;
 }
 #navbar ul {
     list-style-type:none;
