@@ -447,6 +447,15 @@ section.module.parallax-1 {
 
 }
 
+.profile {
+  display: block;
+  position: absolute;
+  top: 100;
+  top: 6px;
+  left: 0px;
+  width: 75px;
+}
+
 /*Animations*/
 h1 {
   animation-duration: 3s;
@@ -1342,5 +1351,9 @@ table {
 
   .hide {
     display: none;
-  } 
+  }
+
+  .profile {
+    display: none;
+  }
 }
