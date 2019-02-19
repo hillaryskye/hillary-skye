@@ -185,9 +185,13 @@ hr {
   background: #2d2b2b;
   top: 300px; }
 
+  .project img {
+    
+  }
+
 img {
   transition: 300ms ease all;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   width: 80%;
   float: left; }
 
@@ -320,19 +324,25 @@ img:after {
 }
 .center-box2 {
   float: none;
-  width: 50%;
+  /* width: 50%; */
   padding-bottom: 20px;
+}
+
+.center-box2.img {
+  width: 80%;
+  transition: 300ms ease all;
 }
 
 #center-box3 {
   left: 0;
-  width: 85%;
+  /* width: 85%; */
   margin: auto;
 }
 
 .center-box4 {
-  width: 96%;
+  width: 85%;
   text-align: center;
+  margin: auto;
 }
 
 .animate-show-hide.ng-hide {
@@ -1166,6 +1176,10 @@ table {
     display: flex;
     justify-content: flex-end;
   }
+
+  .center-box2 {
+    width: 50%;
+  }
 }
 @media(Max-width:1225px){
   .resize {
@@ -1204,6 +1218,10 @@ table {
     display: flex;
     justify-content: flex-end;
   }
+
+  .center-box2 {
+    width: 50%;
+  }
 }
 
 @media(Max-width:900px){
@@ -1222,6 +1240,10 @@ table {
   #navbar {
     display: flex;
     justify-content: flex-end;
+  }
+
+  .center-box2 {
+    width: 70%;
   }
 }
 
@@ -1271,6 +1293,10 @@ table {
   #navbar {
     display: flex;
     justify-content: flex-end;
+  }
+
+  .center-box2 {
+    width: 70%;
   }
 }
 
@@ -1356,4 +1382,12 @@ table {
   .profile {
     display: none;
   }
+
+  .center-box2 {
+    width: 100%;
+  }
+
+  /* .center-box2.img {
+    padding-left: 0;
+  } */
 }
