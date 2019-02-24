@@ -1,0 +1,1503 @@
+/* copied on 2.24.2019 from style.css */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  
+  #name {
+    fill: #fff;
+    stroke: #fff;
+  }
+  
+  #name {
+    stroke-width: 0;
+    animation: go 8s linear infinite;
+  }
+  
+  @keyframes go {
+    0% {
+      stroke-width: 1pt;
+      stroke-dashoffset: 1200;
+      fill-opacity: 0;
+      fill: #fff;
+    }
+    50% {
+      fill-opacity: 0;
+      fill: #fff;
+    }
+    80% {
+      stroke-dashoffset: 0;
+      fill-opacity: 1;
+      stroke-width: 0pt;
+      fill: #fff;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      fill-opacity: 1;
+      stroke-width: 0pt;
+      fill: #af0a0adb;
+    }
+  }
+  
+  #rect {
+    stroke-width: 0;
+    animation: rect 2s linear infinite;
+  }
+  
+  @keyframes rect {
+    0% {
+      stroke-width: 1pt;
+      stroke-dashoffset: 1200;
+      fill-opacity: 0;
+    }
+    80% {
+      fill-opacity: 0;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      fill-opacity: 1;
+      stroke-width: 0pt;
+    }
+  }
+  
+  #path {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 100%;
+  }
+  
+  section {
+    margin: 0 auto;
+  }
+  
+  main {
+    margin: 0 auto;
+    width: 100%;
+    float: left;
+  }
+  
+  .left {
+    margin: 0 auto;
+    float: left; }
+  
+  .left:after {
+    content: "";
+    display: table;
+    clear: both; }
+  
+  .right {
+    float: right; }
+  
+  .right:after {
+    content: "";
+    display: table;
+    clear: both; }
+  
+  .one-half {
+    width: 45%;
+    padding: 5px;
+    float: left;
+    margin: 5px; }
+  
+  .one-half:after {
+    content: "";
+    display: table;
+    clear: both; }
+  
+  /* -------- COLUMN LAYOUTS -------*/
+  /* -- Column Sizes -- */
+  .one-fourth {
+    width: 21.25%; }
+  
+  .one-third {
+    width: 29.333%; }
+  
+  /* .one-half     { width:45.5%; }
+  */
+  .two-third {
+    width: 61.666%; }
+  
+  .three-fourth {
+    width: 69.75%; }
+  
+  .one-column {
+    width: 94%; }
+  
+  .full-column {
+    width: 100%; }
+  
+  /* -- Column Margin & Float-- */
+  .one_half, .one_third, .two_third,
+  .three_fourth, .one_fourth, .one_column,
+  .full_column {
+    margin-left: 3%;
+    margin-top: 1%;
+    float: left; }
+  
+  /* -- Column Row (aka Clearfix) -- */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both; }
+  
+  .welcome {
+    width: 50%;
+    margin: 0 auto;
+    color: #af0a0a;
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid #fff;
+    margin-top: 100px;
+    padding: 15px;
+    }
+  
+    /*svg*/
+    .ad {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    .ad text {
+      width: 100%;
+      height: 100%;
+    }
+  
+  .href {
+    display: block;
+  }
+  .href a {
+    margin-left: 25px;
+  }
+  
+  .href:after {
+    content: "";
+    display: table;
+    clear: both; }
+  
+  hr {
+    position: relative;
+    color: #2d2b2b;
+    padding: 1.2px;
+    width: 54%;
+    background: #2d2b2b;
+    top: 300px; }
+  
+    #project-box {
+      display: block;
+    }
+  
+    /* #project-box:hover {
+      background-color: rgba(245,245,220, 0.9);
+    } */
+  
+  img {
+    transition: 300ms ease all;
+    /* margin-left: 50px; */
+    width: 80%;
+    /* float: left;  */
+  }
+  
+  img:after {
+    content: "";
+    display: table;
+    clear: both; }
+  
+  /* .project .mask {
+    position: absolute;
+    overflow: hidden;
+    top: 20px;
+    margin-top: -20px;
+    max-height: 98%;
+    min-height: 90%;
+  } */
+  
+  .padding-top20 {
+    padding-top: 20px;
+  }
+  
+  .project .mask2 {
+    background-color: rgba(245,245,220, 0.9);
+    overflow: hidden;
+  }
+  .project img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -165px;
+      margin-left: -260px;
+  }
+  
+  .project-inside {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    min-height: 345px;
+  }
+  
+  .project-inside:hover {
+    transition: all 0.8s ease;
+    /* background: rgba(0, 0, 0, 0.6); */
+    opacity: 1;
+    padding: 20px;
+    min-height: 345px;
+    background-color: rgba(245,245,220, 0.9);
+  }
+  
+  .project-inside:hover:after {
+    /* width: 100%; */
+    content: "";
+    height: 100%; 
+    left: 0; 
+    top: 0; 
+    width: 0px;  
+    position: absolute; 
+    transition: all 0.3s ease 0s; 
+    -webkit-transition: all 0.3s ease 0s; 
+    z-index: -1;
+  }
+  
+  #project-box:hover .project-inside:hover {
+    /* display: block; */
+    opacity: 1;
+  }
+  
+  .project h2 {
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      font-size: 17px;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.8);
+      margin: 20px 0 0 0
+  }
+  .project p {
+      font-style: italic;
+      font-size: 1.1em;
+      position: relative;
+      padding: 20px 0 20px;
+      text-align: left;
+      overflow: hidden;
+  }
+  
+  .project .about {
+    font-style: normal;
+  }
+  
+  .project .mask3 {
+    min-height: 459px;
+  }
+  .project .mask4 {
+    min-height: 405px;
+  }
+  .project .mask5 {
+    min-height: 430px;
+  }
+  .project a.href {
+      display: inline-block;
+      text-decoration: none;
+      padding: 7px 14px;
+      background: #000;
+      color: #fff;
+      text-transform: uppercase;
+      box-shadow: 0 0 1px #000
+  }
+  .project a.href:hover {
+      box-shadow: 0 0 5px #000;
+      border: 1px solid green;
+  }
+  .view-first .img {
+      transition: all 0.2s linear;
+  }
+  .view-first .mask {
+      opacity: 0;
+      background-color: rgba(245,245,220, 0.9);
+      transition: all 0.4s ease-in-out;
+  }
+  .view-first h2 {
+      /* transform: translateY(-300px); */
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+  }
+  .view-first p {
+    /* transform: translateX(-300px); */
+    opacity: 0;
+    transition: all 0.4s linear;
+    text-align: left;
+  }
+  .view-first .href {
+    /* transform: translateX(300px); */
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .view-first:hover img {
+      transform: scale(1);
+    width: 80%;
+    display: none;
+  }
+  .view-first:hover .mask {
+      opacity: 1;
+  }
+  .view-first:hover h2,
+  .view-first:hover p,
+  .view-first:hover .href {
+      opacity: 1;
+      transform: translateY(0px);
+      transform: translateX(0px);
+  }
+  .view-first:hover p {
+      transition-delay: 0.1s;
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-bottom: 0px;
+      padding-right: 0px;
+  }
+  .view-first:hover .href {
+      transition-delay: 0.2s;
+      padding-bottom: 20px;
+  }
+  .view-first:hover h2 {
+      transition-delay: 0.2s;
+  }
+  
+  .text-align {
+    padding-right: 20px;
+    text-align: right;
+  }
+  #center-box {
+    float: none;
+    margin: auto;
+  }
+  .center-box2 {
+    float: none;
+    /* width: 50%; */
+    padding-bottom: 20px;
+  }
+  
+  .center-box2.img {
+    width: 80%;
+    transition: 300ms ease all;
+  }
+  
+  #center-box3 {
+    left: 0;
+    /* width: 85%; */
+    margin: auto;
+  }
+  
+  .center-box4 {
+    width: 85%;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .animate-show-hide.ng-hide {
+    opacity: 0;
+  }
+  
+  .animate-show-hide.ng-hide-add,
+  .animate-show-hide.ng-hide-remove {
+    transition: all linear 0.5s;
+  }
+  
+  .project {
+    background: rgba(0,0,0,.7);
+    /* border: 1px solid aliceblue; */
+    position: relative;
+    padding: 20px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    overflow: hidden;
+    min-height: 325px;
+    margin-bottom: 20px;
+  }
+  
+  /* .project:hov {
+    display: block;
+  } */
+  
+  .project2 {
+    float: none;
+    margin: 0 auto;
+  }
+  
+  /* .project:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+  
+  .fa {
+    font-size: 1.5em;
+    color: #af0a0a; }
+  
+  .fa:hover {
+    color: white; }
+  
+  footer {
+    padding: 50px;
+    float: left;
+    width: 80%;
+    color: white;
+    background: black;
+    opacity: .8;
+    margin: 0 0 0 -40%;
+    left: 50%;
+    position: relative;
+    bottom: 20px;
+    top: 400px; }
+  
+  footer li {
+  list-style: none;
+  }
+  
+  .footer {
+    top: 0;
+  }
+  
+  .github {
+    margin-left: 5px; }
+  
+  .show {
+    color: #114fe0;
+    margin-left: 0;
+    text-decoration: none;
+    transition: 300ms ease all;
+  }
+  
+  .show a {
+    color: #114fe0; }
+  
+  a:after {
+    content: "";
+    display: table;
+    clear: both; }
+  
+  .title {
+    color: #114fe0;
+    float: right;
+    text-shadow: 1px 1px 2px white;
+    font-size: 1.6em; }
+  
+  .container100 {
+    /* width: 100%; */
+    background: rgba(0,0,0,.7);
+  }
+  
+  section.module:last-child {
+    margin-bottom: 0; }
+  
+  section.module p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  section.module p:last-child {
+    margin-bottom: 0; }
+  
+  section.module.content {
+    padding: 40px 0; }
+  
+  section.module.parallax {
+    height: 100px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; }
+  
+  section.module.parallax-1 {
+    background-image: url("/images/colorado-sunrise.jpg");
+  
+  }
+  
+  .profile {
+    display: block;
+    position: absolute;
+    top: 100;
+    top: 6px;
+    left: 0px;
+    width: 75px;
+  }
+  
+  /*Animations*/
+  h1 {
+    animation-duration: 3s;
+    animation-delay: 2s;}
+  
+  svg {
+    margin: 0 auto; }
+  
+  #square {
+    z-index: -1; }
+  
+  .hold {
+    display: block;
+    min-height: 500px; }
+  
+  .black {
+    color: black;
+  }
+  
+  form {
+    width: 100%;
+    margin-top: 20px; }
+  
+  textarea, input[type='text'] {
+    margin: 20px;
+    border: 1px solid #372248;
+    transition: 300ms ease all;
+    outline: none;
+    padding: 20px;
+    margin-bottom: 20px; }
+  
+  textarea:focus, input[type='text']:focus {
+    border: 1px solid #3F7D20; }
+  
+  textarea {
+    min-height: 250px; }
+  
+  label {
+    font-size: .9em;
+    margin: 20px;
+    font-weight: bold; }
+  
+  .select {
+    margin-left: 5px;
+    margin-top: 10px; }
+  
+    a {
+      display: block;
+      float: left;
+      border-radius: 5px;
+      padding: 7px 10px;
+      color: #af0a0a;
+      text-decoration: none;
+      transition: 300ms ease all;
+    }
+    p, ul li {
+      color: #114fe0;
+      color: rgba(0,53,131, .9);
+      color: rgba(20, 81, 186, .9);
+      font-size: .9em;
+      padding-left: 0px; }
+  
+  header {
+    margin-top: 190px;
+    text-align: center; }
+  
+  header nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+  }
+  
+  /* styling for dropdown navbar */
+  #navbar {
+    background: rgba(255, 255, 255, .7);
+      padding: 20px 50px;
+  }
+  
+  #navbar img {
+    margin-left: 20px;
+  }
+  
+  #navbar.smaller {
+    background-color: rgba(255,255,255,.7);
+  }
+  
+  #navbar.big {
+    background-color: rgba(0,0,0,.8);
+    color: #fff;
+  }
+  
+  #navbar.big a, #navbar.big i {
+    color: #eae6e6;
+  }
+  #navbar ul {
+      list-style-type:none;
+      margin:0;
+      padding:0;
+  }
+  #navbar ul li {
+      display:inline-block;
+      position:relative;
+  }
+  
+  /* sub navigation */
+  #navbar li ul {
+      background-color: rgba(175,10,10,.9);
+      position:absolute;
+      left:30px;
+      top:40px; /* make this equal to the line-height of the links (specified below) */
+      width:225px;
+  }
+  #navbar li li {
+      position:relative;
+      margin:0;
+      display:block;
+  }
+  #navbar li li ul {
+      position:absolute;
+      top:0;
+      left:200px; /* make this equal to the width of the sub nav above */
+      margin:0;
+      border: 3px solid yellow;
+  }
+  
+  /* style all links */
+  #navbar a {
+      line-height:40px;
+      padding:0 10px;
+      color: #af0a0a;
+      text-decoration:none;
+  }
+  
+  #navbar a:hover,
+  #navbar a:active {
+      color: white;
+      background: #114fe0;
+      background: #3A4766;
+      background: rgba(0,53,131, .7);
+  }
+  
+  #navbar a:hover:after {
+    content: "";
+    height: 100%; 
+    left: 0; 
+    top: 0; 
+    width: 0px;  
+    position: absolute; 
+    transition: all 0.3s ease 0s; 
+    -webkit-transition: all 0.3s ease 0s; 
+    z-index: -1;
+  }
+  
+  /* style sub level links */
+  #navbar li li a {
+      border-bottom:solid 1px rgb(200,50,50);
+      text-align: left;
+      color: white;
+      width: 100%;
+  }
+  #navbar li li:last-child a {
+      border-bottom:none;
+  }
+  
+  /* hide sub menu links */
+  ul.sub-menu {
+      display:none;
+  }
+  
+  ul.show {
+    display: block;
+  }
+  
+  #project-box img {
+    /* display: block; */
+    background: #fff;
+  }
+  #project-box .image, .project-inside .image {
+    display: block;
+  }
+  
+  span {
+    color: #af0a0a;
+  }
+  span:hover {
+    color: white;
+  }
+  #navbar .fa {
+    padding-left: 5px;
+  }
+  #navbar li {
+    color: #af0a0a;
+  }
+  nav li, article li {
+    list-style: none;
+  }
+  
+  nav li:after {
+    content: "";
+    display: table;
+    clear: both;
+    background: black;
+  }
+  #navbar nav a {
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-left: 20px;
+    display: block
+  }
+  
+  .logo {
+    position: fixed;
+    width: 18%;
+    top: -55px;
+    left: 50px;
+    z-index: 10;
+  }
+  .navigation {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+  #hamburger {
+    cursor: pointer;
+    font-size: 2rem;
+    float: right;
+    position: fixed;
+    right: 50;
+    right: 50px;
+    top: 20px;
+    z-index: 2;
+  }
+  #hamburger {
+    display: none;
+  }
+  .blue {
+    color: blue;
+    transition: all .3s ease;
+  }
+  
+  html {
+    font-size: 1em; }
+  
+  body {
+    background-color: #c7d1ea;
+    background-image: url("/images/colorado-sunrise.jpg");
+    height: 600px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #333; }
+  
+  /* article a {
+    padding: 5px;
+    line-height: 1em; } */
+  
+  /* article {
+    width: 100%;
+    display: block;
+    float: left;
+    height: 25px; } */
+  
+  p:after {
+    content: "";
+    display: table;
+    clear: both; }
+  
+  p:hover {
+    color: #114fe0;
+  }
+  
+  .mask2 ul {
+    padding-top: 20px;
+  }
+  
+  .mask2 ul li {
+    font-size: 1.1em;
+    width: 100%;
+  }
+  
+  .mask2 p {
+    padding: 20px;
+  }
+  h1, h2, h3, h4 {
+    font-weight: inherit;
+    line-height: 1.2; }
+  
+  h6 {
+    font-weight: bold; }
+  
+  h1 {
+    color: #af0a0a;
+    background: rgba(0,0,0,.7);
+    width: 30%;
+    padding: 20px;
+    margin-top: -100px;
+    margin-left: 50px;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Bad Script', cursive; }
+  
+  h2 {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin-left: 50px; }
+  
+  h3 {
+    font-weight: inherit;
+    text-transform: uppercase;
+    line-height: 1.2;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    width: 25%;
+    text-align: center;
+    margin: 20px auto;
+  }
+  .shopping {
+    width: 100%;
+    color: #fff;
+  }
+  .reddit {
+    width: 35%;
+  }
+  
+  h4 {
+    float: left;
+    padding-left: 50px;
+    font-size: 1.25em;
+    text-align: center; }
+  
+  h5 {
+    position: relative;
+    top: 300px;
+    color: #af0a0a;
+    width: 100%;
+    float: right;
+    font-size: 1.2em;
+    padding-right: 10px; }
+  
+  h6 {
+    font-weight: normal;
+    margin: 0px;
+    margin-left: 20px;
+    line-height: 1.3em;
+    font-size: .7em; }
+  
+  blockquote {
+    padding-left: 60px;
+    border-left: #24227F solid 20px;
+    margin-bottom: 20px; }
+  
+  a:after {
+    content: "";
+    display: table;
+    clear: both; }
+  
+  a:hover, button:hover {
+    color: #fff;
+    background: #114fe0;
+    background: rgba(0,53,131, .8); }
+  
+  .center {
+    text-align: center; }
+  
+  .center-width96 {
+    text-align: center;
+    width: 96%;
+  }
+  
+  /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+  /**
+   * 1. Set default font family to sans-serif.
+   * 2. Prevent iOS text size adjust after orientation change, without disabling
+   *    user zoom.
+   */
+  html {
+    font-family: sans-serif;
+    /* 1 */
+    -ms-text-size-adjust: 100%;
+    /* 2 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */ }
+  
+  /**
+   * Remove default margin.
+   */
+  body {
+    margin: 0; }
+  
+  /* HTML5 display definitions
+     ========================================================================== */
+  /**
+   * Correct `block` display not defined for any HTML5 element in IE 8/9.
+   * Correct `block` display not defined for `details` or `summary` in IE 10/11
+   * and Firefox.
+   * Correct `block` display not defined for `main` in IE 11.
+   */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  main,
+  menu,
+  nav,
+  section,
+  summary {
+    display: block; }
+  
+  /**
+   * 1. Correct `inline-block` display not defined in IE 8/9.
+   * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+   */
+  audio,
+  canvas,
+  progress,
+  video {
+    display: inline-block;
+    /* 1 */
+    vertical-align: baseline;
+    /* 2 */ }
+  
+  /**
+   * Prevent modern browsers from displaying `audio` without controls.
+   * Remove excess height in iOS 5 devices.
+   */
+  audio:not([controls]) {
+    display: none;
+    height: 0; }
+  
+  /**
+   * Address `[hidden]` styling not present in IE 8/9/10.
+   * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+   */
+  [hidden],
+  template {
+    display: none; }
+  
+  /* Links
+     ========================================================================== */
+  
+  a:active,
+  a:hover {
+    outline: 0; }
+  
+  /* Text-level semantics
+     ========================================================================== */
+  /**
+   * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+   */
+  abbr[title] {
+    border-bottom: 1px dotted; }
+  
+  /**
+   * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+   */
+  b,
+  strong {
+    font-weight: bold; }
+  
+  /**
+   * Address styling not present in Safari and Chrome.
+   */
+  dfn {
+    font-style: italic; }
+  
+  /**
+   * Address variable `h1` font-size and margin within `section` and `article`
+   * contexts in Firefox 4+, Safari, and Chrome.
+   */
+  /* h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  } */
+  /**
+   * Address styling not present in IE 8/9.
+   */
+  mark {
+    background: #ff0;
+    color: #000; }
+  
+  /**
+   * Address inconsistent and variable font size in all browsers.
+   */
+  small {
+    font-size: 80%; }
+  
+  /**
+   * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+   */
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline; }
+  
+  sup {
+    top: -0.5em; }
+  
+  sub {
+    bottom: -0.25em; }
+  
+  /* Embedded content
+     ========================================================================== */
+  /**
+   * Remove border when inside `a` element in IE 8/9/10.
+   */
+  img {
+    border: 0; }
+  
+  /**
+   * Correct overflow not hidden in IE 9/10/11.
+   */
+  svg:not(:root) {
+    overflow: hidden; }
+  
+  /* Grouping content
+     ========================================================================== */
+  /**
+   * Address margin not present in IE 8/9 and Safari.
+   */
+  figure {
+    margin: 1em 40px; }
+  
+  /**
+   * Address differences between Firefox and other browsers.
+   */
+  hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    /*   height: 0;
+   */ }
+  
+  /**
+   * Contain overflow in all browsers.
+   */
+  pre {
+    overflow: auto; }
+  
+  /**
+   * Address odd `em`-unit font size rendering in all browsers.
+   */
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace;
+    font-size: 1em; }
+  
+  /* Forms
+     ========================================================================== */
+  /**
+   * Known limitation: by default, Chrome and Safari on OS X allow very limited
+   * styling of `select`, unless a `border` property is set.
+   */
+  /**
+   * 1. Correct color not being inherited.
+   *    Known issue: affects color of disabled elements.
+   * 2. Correct font properties not being inherited.
+   * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+   */
+  optgroup,
+  select,
+  textarea {
+    color: inherit;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+    margin: 0;
+    /* 3 */ }
+  
+  /**
+   * Address `overflow` set to `hidden` in IE 8/9/10/11.
+   */
+  button {
+    overflow: visible; }
+  
+  /**
+   * Address inconsistent `text-transform` inheritance for `button` and `select`.
+   * All other form control elements do not inherit `text-transform` values.
+   * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+   * Correct `select` style inheritance in Firefox.
+   */
+  button,
+  select {
+    text-transform: none; }
+  
+  /**
+   * Re-set default cursor for disabled elements.
+   */
+  button[disabled],
+  html input[disabled] {
+    cursor: default; }
+  
+  /**
+   * Remove inner padding and border in Firefox 4+.
+   */
+  button::-moz-focus-inner,
+  input::-moz-focus-inner {
+    border: 0;
+    padding: 0; }
+  
+  /**
+   * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+   * the UA stylesheet.
+   */
+  input {
+    line-height: normal; }
+  
+  /**
+   * It's recommended that you don't attempt to style these elements.
+   * Firefox's implementation doesn't respect box-sizing, padding, or width.
+   *
+   * 1. Address box sizing set to `content-box` in IE 8/9/10.
+   * 2. Remove excess padding in IE 8/9/10.
+   */
+  input[type="checkbox"],
+  input[type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */ }
+  
+  /**
+   * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+   * `font-size` values of the `input`, it causes the cursor style of the
+   * decrement button to change from `default` to `text`.
+   */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    height: auto; }
+  
+  /**
+   * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+   * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+   *    (include `-moz` to future-proof).
+   */
+  input[type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    /* 2 */
+    box-sizing: content-box; }
+  
+  /**
+   * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+   * Safari (but not Chrome) clips the cancel button when the search input has
+   * padding (and `textfield` appearance).
+   */
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+  
+  /**
+   * Define consistent border, margin, and padding.
+   */
+  fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em; }
+  
+  /**
+   * 1. Correct `color` not being inherited in IE 8/9/10/11.
+   * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+   */
+  legend {
+    border: 0;
+    padding: 0;}
+  
+  /**
+   * Remove default vertical scrollbar in IE 8/9/10/11.
+   */
+  textarea {
+    overflow: auto; }
+  
+  /**
+   * Don't inherit the `font-weight` (applied by a rule above).
+   * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+   */
+  optgroup {
+    font-weight: bold; }
+  
+  /* Tables
+     ========================================================================== */
+  /**
+   * Remove most spacing between table cells.
+   */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  
+  /* Media Queries */
+  @media(Min-width:1226px){
+    .resize {
+      width: 80%;
+    }
+    .full {
+      display: inline;
+    }
+    .med {
+      display: none;
+    }
+    .small {
+      display: none;
+    }
+   
+  }
+  @media (Max-width: 1500px) {
+   
+    #designs {
+      min-height: 300px;
+    }
+  
+    #designs img {
+      margin-left: -450px;
+      margin-top: -100px;
+    }
+    #navbar {
+      display: flex;
+      justify-content: flex-end;
+    }
+  
+    .center-box2 {
+      width: 50%;
+    }
+  }
+  @media(Max-width:1225px){
+    .resize {
+      width: 80%;
+    }
+    .full {
+      display: inline;
+    }
+    .med {
+      display: none;
+    }
+    .small {
+      display: none;
+    }
+    .col-xs-12 .project img {
+      /* min-height: 455px; */
+      /* margin-left: -350px; */
+    }
+    /* .col-md-6 .project img {
+      margin-left: -220px;
+    } */
+    /* .project mask5 {
+      height: 100%;
+    } */
+  
+    .project h2 {
+      font-size: 18px;
+    }
+  
+    section.module p {
+      font-size: 1em;
+    }
+    section.module.parallax {
+      height: 0;
+    }
+    footer {
+      top: 200px;
+    }
+    #navbar {
+      display: flex;
+      justify-content: flex-end;
+    }
+  
+    #designs img {
+      margin-left: -350px;
+    }
+  
+    .center-box2 {
+      width: 50%;
+    }
+  }
+  
+  @media(Max-width:900px){
+    .resize {
+      width: 100%;
+    }
+    .full {
+      display: none;
+    }
+    .med {
+      display: inline;
+    }
+    .small {
+      display: none;
+    }
+    #navbar {
+      display: flex;
+      justify-content: flex-end;
+    }
+  
+    .center-box2 {
+      width: 70%;
+    }
+  
+    .col-xs-12 .project img {
+      margin-top: -165px;
+      margin-left: 100px;
+      left: 0;
+      margin-left: 75px;
+    }
+  
+    #designs img {
+      margin-left: -275px;
+    }
+  }
+  
+  @media(Max-width:900px) and (min-width:600px){
+    .resize { border: none; }
+    .project {
+      min-height: 200px;
+      padding-bottom: 80px;
+    }
+    .project img {
+      margin-left: 75px;
+    }
+    /* .project .mask {
+      min-height: 100%;
+      margin-left: 10%;
+      max-height: 98%;
+      min-height: 80%;
+    } */
+    .project h2 {
+      font-size: 18px;
+    }
+  
+    .project a {
+      font-size: 14px;
+    }
+  
+    section.module p {
+      font-size: 1em;
+    }
+  
+    footer .fa {
+      font-size: 1.0em;
+    }
+  
+    footer .title {
+      font-size: 1.3em;
+    }
+    header nav {
+      padding-right: 0;
+    }
+    nav a {
+      margin-left: 0;
+      font-size: .9em;
+    }
+    footer nav.hide {
+      display: block;
+    }
+    #navbar {
+      display: flex;
+      justify-content: flex-end;
+    }
+  
+    .center-box2 {
+      width: 70%;
+    }
+  
+    #designs img {
+      margin-left: -280px;
+    }
+  }
+  
+  @media(Max-width:600px) {
+    .resize { border: none; }
+    .welcome {
+      margin-top: 0;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+    .project {
+      /* width: 100%; */
+      min-height: 200px;
+      padding-bottom: 150px;
+      min-height: 455px;
+    }
+    .project mask {
+      min-height: 80%;
+      max-height: 98%;
+    }
+  
+    #navbar {
+      justify-content: flex-start;
+    }
+  
+    #navbar li ul {
+      top: 20px;
+      left: 40px;
+      z-index: 2;
+    }
+  
+    #navbar ul li {
+      display: flex;
+      border-bottom: 1px solid #00000052;
+    }
+  
+    .navigation a {
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.3);
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      padding: 10px;
+    }
+  
+    .navigation li:last-of-type a {
+      border-bottom: none;
+    }
+    #navbar {
+      padding: 0px 15px;
+    }
+  
+    #navbar a {
+      line-height: 30px;
+    }
+    nav a {
+      font-size: .9em;
+    }
+    h1 {
+      margin-top: 75px;
+      width: 80%;
+    }
+    h3 {
+      width: 60%;
+    }
+    .shopping {
+      width: 80%;
+    }
+    /* .reddit {
+      width: 90%;
+    } */
+    #hamburger {
+      display: block;
+      right: 20px;
+    }
+  
+    .fa-bars {
+      font-size: 25px;
+    }
+  
+    .hiding {
+      display: none;
+    }
+  
+    .profile {
+      display: none;
+    }
+  
+    .center-box2 {
+      width: 100%;
+    }
+  
+    #designs img {
+      margin-left: -175px;  }
+  }
+  
