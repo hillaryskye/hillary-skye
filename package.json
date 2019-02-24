@@ -25,7 +25,5 @@
     "serve-favicon": "^2.5.0",
     "serve-static": "1.13.2"
   },
-  "devDependencies": {
-    "dotenv": "^1.2.0"
-  }
+  "devDependencies": {}
 }
