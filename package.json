@@ -7,6 +7,10 @@
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engines": {
+    "node": "11.9.0",
+    "npm": "6.5.0"
+  },
   "author": "Hillary Skye",
   "license": "ISC",
   "dependencies": {
