@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var app = express();
+if (process.env.NODE_ENV !== 'production') { require('dotenv').config() }
 
 var cors = require('cors')
 app.use(cors())
@@ -24,6 +25,5 @@ app.use(function(req, res) {
 app.listen(process.env.PORT || 3000, function(){
    console.log('listening port 3000');
 });
-
 
 module.exports = app;
