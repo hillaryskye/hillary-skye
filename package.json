@@ -1,6 +1,6 @@
 {
   "name": "hillary-skye",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Portfolio app for Hillary Skye showing Angular projects and web designs and wireframing examples",
   "main": "app.js",
   "scripts": {
@@ -24,6 +24,7 @@
     "node-sass": "^4.11.0",
     "path": "^0.12.7",
     "serve-favicon": "^2.5.0",
-    "serve-static": "1.13.2"
+    "serve-static": "1.13.2",
+    "font-awesome": "^4.4.0"
   }
 }
