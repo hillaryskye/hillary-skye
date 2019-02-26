@@ -3,16 +3,18 @@
               </section>
               
                 <section class="module content">
-                   <div class="container100">
-                     <div id="designs" class="project view-first" ng-repeat="design in designs">
-                       <img class="img" src="/images/{{design.image}}.png" alt="">
-                       <div class="mask">
+                   <div class="row">
+                     <div id="designs" class="col-xs-8 col-md-8 col-lg-8 ng-scope" ng-repeat="design in designs">
+                        <div id="design-box" class="project">
+                      <img class="img" src="/images/{{design.image}}.png" alt="">
+                       <div class="design-inside">
                          <h2>{{design.name}}</h2>
                          <p>Type: {{design.type}}</p>
                          <p class="desc">Description: {{design.desc}}</p>
                          <div class="href">
                            <a ng-href="{{design.codepen}}"><i class="fa fa-codepen"> </i> Codepen</a>
                            <a ng-href="{{design.details}}"><i class="{{design.icon}}"></i> Details</a>
+                         </div>
                          </div>
                          </div>
                      </div>
