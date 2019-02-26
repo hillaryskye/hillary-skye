@@ -1280,16 +1280,6 @@
     .small {
       display: none;
     }
-    .col-xs-12 .project img {
-      /* min-height: 455px; */
-      /* margin-left: -350px; */
-    }
-    /* .col-md-6 .project img {
-      margin-left: -220px;
-    } */
-    /* .project mask5 {
-      height: 100%;
-    } */
   
     .project h2 {
       font-size: 18px;
