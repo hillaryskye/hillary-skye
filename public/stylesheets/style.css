@@ -217,7 +217,7 @@ img:after {
 }
 
 .project-inside:hover {
-  transition: all 0.8s ease;
+  /* transition: all 0.8s ease; */
   opacity: 1;
   padding: 20px;
   min-height: 400px;
@@ -686,11 +686,21 @@ ul.show {
   padding: 10px 20px 10px 10px;
 }
 
+.project-inside p, .project-inside h2, .design-inside .href {
+  transform: translateY(-300px);
+  transition: all 0.4s ease-in-out;
+}
+
+.project-inside .href, .design-inside .href {
+  transform: translateX(-300px);
+  transition: all 0.4s ease-in-out;
+
+}
+
 .design-inside {
   position: relative;
   opacity: 0;
   min-height: 250px;
-  /* transform: translateY(-300px); */
   transition: all 0.4s ease-in-out;
 }
 
@@ -702,7 +712,10 @@ ul.show {
 .design-inside:hover p,
 .design-inside:hover h2,
 .design-inside:hover p,
-.design-inside:hover .href {
+.design-inside:hover .href,
+.project-inside:hover p,
+.project-inside:hover h2,
+.project-inside:hover .href {
     opacity: 1;
     transform: translateY(0px);
     transform: translateX(0px);
