@@ -1,0 +1,66 @@
+[debug] [2019-02-27T21:05:00.397Z] ----------------------------------------------------------------------
+[debug] [2019-02-27T21:05:00.404Z] Command:       /Users/hillaryskye/.nvm/versions/node/v11.9.0/bin/node /Users/hillaryskye/.nvm/versions/node/v11.9.0/bin/firebase serve
+[debug] [2019-02-27T21:05:00.404Z] CLI Version:   6.4.0
+[debug] [2019-02-27T21:05:00.405Z] Platform:      darwin
+[debug] [2019-02-27T21:05:00.405Z] Node Version:  v11.9.0
+[debug] [2019-02-27T21:05:00.424Z] Time:          Wed Feb 27 2019 14:05:00 GMT-0700 (Mountain Standard Time)
+[debug] [2019-02-27T21:05:00.424Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-27T21:05:00.466Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-27T21:05:00.466Z] > authorizing via signed-in user
+[debug] [2019-02-27T21:05:00.467Z] [iam] checking project hillaryskye-1c483 for permissions ["firebase.projects.get"]
+[debug] [2019-02-27T21:05:00.470Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/hillaryskye-1c483:testIamPermissions  
+
+[debug] [2019-02-27T21:05:01.243Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-27T21:05:01.247Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/hillaryskye-1c483  
+ 
+[debug] [2019-02-27T21:05:01.745Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/hillaryskye/Public/workspace/hillary-skye'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2019-02-27T21:05:04.145Z] Fetching environment
+[debug] [2019-02-27T21:05:04.154Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/453909950118:getServerAppConfig  
+ 
+[debug] [2019-02-27T21:05:04.155Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/453909950118/clients/_:getWebAppConfig  
+ 
+[debug] [2019-02-27T21:05:04.587Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-27T21:05:04.588Z] Starting @google-cloud/functions-emulator
+[debug] [2019-02-27T21:05:04.653Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-02-27T21:05:07.196Z] Parsing function triggers
+[info] i  functions: No HTTPS functions found. Use firebase functions:shell if you would like to emulate other types of functions.
+[debug] [2019-02-27T21:10:50.832Z] ----------------------------------------------------------------------
+[debug] [2019-02-27T21:10:50.837Z] Command:       /Users/hillaryskye/.nvm/versions/node/v11.9.0/bin/node /Users/hillaryskye/.nvm/versions/node/v11.9.0/bin/firebase serve
+[debug] [2019-02-27T21:10:50.837Z] CLI Version:   6.4.0
+[debug] [2019-02-27T21:10:50.838Z] Platform:      darwin
+[debug] [2019-02-27T21:10:50.838Z] Node Version:  v11.9.0
+[debug] [2019-02-27T21:10:50.839Z] Time:          Wed Feb 27 2019 14:10:50 GMT-0700 (Mountain Standard Time)
+[debug] [2019-02-27T21:10:50.839Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-27T21:10:50.865Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-27T21:10:50.866Z] > authorizing via signed-in user
+[debug] [2019-02-27T21:10:50.866Z] [iam] checking project hillaryskye-1c483 for permissions ["firebase.projects.get"]
+[debug] [2019-02-27T21:10:50.868Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/hillaryskye-1c483:testIamPermissions  
+
+[debug] [2019-02-27T21:10:51.554Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-27T21:10:51.557Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/hillaryskye-1c483  
+ 
+[debug] [2019-02-27T21:10:52.059Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/hillaryskye/Public/workspace/hillary-skye'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2019-02-27T21:10:54.364Z] Fetching environment
+[debug] [2019-02-27T21:10:54.369Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/453909950118:getServerAppConfig  
+ 
+[debug] [2019-02-27T21:10:54.370Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/453909950118/clients/_:getWebAppConfig  
+ 
+[debug] [2019-02-27T21:10:54.757Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-27T21:10:54.757Z] Starting @google-cloud/functions-emulator
+[debug] [2019-02-27T21:10:54.864Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-02-27T21:10:57.353Z] Parsing function triggers
+[info] i  functions: No HTTPS functions found. Use firebase functions:shell if you would like to emulate other types of functions.
