@@ -152,7 +152,7 @@ main {
   font-weight: bold;
   text-align: center;
   border: 3px solid #fff;
-  margin-top: 100px;
+  /* margin-top: 100px; */
   padding: 15px;
   }
 
@@ -439,6 +439,11 @@ a:after {
   text-shadow: 1px 1px 2px white;
   font-size: 1.6em; }
 
+  /* .container {
+    padding-top: 150px;
+    border: 3px solid #000;
+} */
+
 .container100 {
   /* width: 100%; */
   background: rgba(0,0,0,.7);
@@ -457,10 +462,14 @@ section.module p:last-child {
   margin-bottom: 0; }
 
 section.module.content {
-  padding: 40px 0; }
+  /* padding: 40px 0;  */
+}
+.project-margin {
+  margin-top: 100px;
+}
 
 section.module.parallax {
-  height: 100px;
+  /* height: 100px; */
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -543,8 +552,8 @@ label {
     padding-left: 0px; }
 
 header {
-  margin-top: 190px;
-  text-align: center; }
+  text-align: center;
+  padding-top: 180px; }
 
 header nav {
     position: fixed;
@@ -866,7 +875,7 @@ h3 {
   padding: 10px;
   width: 25%;
   text-align: center;
-  margin: 20px auto;
+  /* margin: 20px auto; */
 }
 .shopping {
   width: 100%;
@@ -1271,10 +1280,6 @@ table {
     margin: auto;
   }
 
-  /* #designs img {
-    width: 100%;
-    position: absolute;
-  } */
   #navbar {
     display: flex;
     justify-content: flex-end;
@@ -1316,10 +1321,6 @@ table {
     justify-content: flex-end;
   }
 
-  /* #designs img {
-    margin-left: -350px;
-  } */
-
   .center-box2 {
     width: 50%;
   }
@@ -1346,10 +1347,6 @@ table {
   .center-box2 {
     width: 70%;
   }
-
-  /* #designs img {
-    margin-left: -275px;
-  } */
 }
 
 @media(Max-width:900px) and (min-width:600px){
@@ -1392,10 +1389,6 @@ table {
   .center-box2 {
     width: 70%;
   }
-
-  /* #designs img {
-    margin-left: -280px;
-  } */
 }
 
 @media(Max-width:600px) {
@@ -1438,6 +1431,19 @@ table {
   #navbar a {
     line-height: 30px;
   }
+
+  #navbar.header {
+    background: transparent;
+  }
+
+  #projectHeader.contents {
+    display: contents;
+  }
+
+  .contents {
+    margin-top: 75px;
+  }
+
   nav a {
     font-size: .9em;
   }
@@ -1449,7 +1455,7 @@ table {
     width: 60%;
   }
   .shopping {
-    width: 80%;
+    width: 100;
   }
 
   #hamburger {
@@ -1462,7 +1468,7 @@ table {
   }
 
   .hiding {
-    display: none;
+    opacity: 0;
   }
 
   .profile {
@@ -1471,5 +1477,14 @@ table {
 
   .center-box2 {
     width: 100%;
+  }
+  .project-margin {
+    margin-top: 50px;
+  }
+  .footer {
+    top: 200px;
+  }
+  .contents.footer {
+    top: 150px;
   }
 }

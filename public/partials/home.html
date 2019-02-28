@@ -1,55 +1,4 @@
-<div class="welcome resize animated fadeInLeft svg-container">
-
- <!--<svg viewBox="0 0 1000 250" version="1.1"
-  baseProfile="basic"
-  width="100%" height="200"
-  xmlns="http://www.w3.org/2000/svg">
-
-    <rect width="100%" height="100%" fill="#af0a0a" />
-    <path id="my_path" d="M10 80 Q 52.5 10, 95 80 T 180 80" stroke="black" stroke-width="3" transform="translate(240,7) rotate(30)" fill="transparent"/>
-    <svg class="full" height="200">
-     <svg class="full" viewBox="0 -15 1000 200" class="ad">
-        <text y="150" x="500" font-size="150" x="50%" text-anchor="middle" fill="white">Hillary Skye</text>
-     </svg>
-    </svg>
-    <svg class="med" viewBox="0 -45 1000 200" class="ad">
-      <text y="100" x="500" font-size="150" x="50%" text-anchor="middle" fill="white">Hillary Skye</text>
-    </svg>
-    <svg class="small" viewBox="0 -45 1000 300" class="ad">
-      <text y="150" x="500" font-size="150" x="50%" text-anchor="middle" fill="white">Hillary Skye</text>
-    </svg>
-        <text font-size="25" fill="blue">
-
-      <textPath startOffset="0" xlink:href="#my_path">Shannon
-         <animate attributeName="startOffset" values="0;.5;1" dur="8s" repeatCount="indefinite" keyTimes="0;.5;1" />
-      </textPath>
-    </text>
-</svg>-->
-
-
-  <!--<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1000 250" style="enable-background:new 0 0 1000 250;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#AF0A0A;}
-	.st1{fill:#FFFFFF;}
-	.st2{font-family:'Raleway-Bold';}
-	.st3{font-size:150px;}
-	.st4{fill:#2E3192;}
-	.st5{fill:none;stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
-</style>
-<rect x="0" class="st0" width="1000" height="250"/>
-<text transform="matrix(1 0 0 1 74.675 171.9564)" class="st1 st2 st3">Hillary Skye</text>
-<rect x="189.8" y="61.4" class="st0" width="30.9" height="22.6"/>
-<circle class="st4" cx="205.3" cy="75.3" r="10.2"/>
-<path id="SVGID_x5F_1_x5F_" class="st5" d="M165.2,65c3-23.8,24.7-48.8,48.5-45.8c23.2,2.9,40.3,28.6,35.1,54.9
-	c-2.8,14.3-6.6,28.4-9.9,42.6c-4.8,20.6-5.6,46,3,55.2c14.5,15.6,38.9,16.4,54.5,1.9"/>
-<text><textPath  xlink:href="#SVGID_x5F_1_x5F_" startOffset="4.043%">
-<tspan  class="st4" style="font-family:'MyriadPro-Regular'; font-size:25px;">Shannon</tspan>
-<animate attributeName="startOffset" values="0;.5;1" dur="8s" repeatCount="indefinite" keyTimes="0;.5;1" />
-</textPath>
-</text>
-</svg>-->
-
+<div ng-class="{contents: hiding}" class="welcome resize animated fadeInLeft svg-container">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 	 viewBox="0 0 1000 250" class="border-name" style="enable-background:new 0 0 1000 250;" xml:space="preserve">
 <style type="text/css">
@@ -99,7 +48,7 @@
 </section>
 
   <section class="module content">
-       <div class="row">
+       <div class="row project-margin">
        <div class="col-xs-12 col-md-6 col-lg-6" ng-repeat="project in projects">
           <!-- <div class="col-xs-12 col-md-6 col-lg-6">  -->
             
@@ -144,7 +93,7 @@
  </section>
 
  <main>
-   <footer>
+   <footer ng-class="{contents: hiding}" >
        <li>Hillary Shannon Skye</li>
        <li>720-218-6389</li>
        <li>skyeinc9@gmail.com</li>
