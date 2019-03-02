@@ -30,7 +30,6 @@
   
 </head>
   <body ng-cloak>
-<h3>SM: {{submenuShow}} Show: {{show}} active: {{active}} isActive{{isActive}}</h3>
      <header id="projectHeader" ng-class="{contents: hiding}">
        <div id="hamburger" ng-click="hiding = !hiding">
           <i class="fa fa-bars"></i>
@@ -41,7 +40,7 @@
              
            <li><a id="navbar1" ng-href="/#/home">Home</a></li>
            
-             <li class="dropdown" ng-mouseover="show = true" ng-mouseleave="show = false" is-active="active"><button>
+             <li class="dropdown" ng-mouseover="show = true" ng-mouseleave="show = false"><button>
                 <a ng-href="/#/details">App Details
                   <i class="fa fa-caret-down"></i>
               </a>
