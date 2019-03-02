@@ -391,7 +391,7 @@ img:after {
   /* font-size: 1.5em; */
   color: #af0a0a; }
 
-.fa:hover {
+.fa:hover, i:hover, a:hover i {
   color: white; }
 
 footer {
@@ -935,7 +935,17 @@ a:after {
   display: table;
   clear: both; }
 
-a:hover, button:hover {
+  button {
+    border: none;
+    background: transparent;
+  }
+
+  /* button:hover.nav-button {
+    background: transparent;
+    color: transparent;
+  } */
+
+a:hover {
   color: #fff;
   background: #114fe0;
   background: rgba(0,53,131, .8);
@@ -1503,5 +1513,10 @@ table {
   }
   .contents.footer {
     top: 150px;
+  }
+
+  button {
+    margin: 0;
+    padding: 0;
   }
 }
