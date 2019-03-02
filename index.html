@@ -30,19 +30,23 @@
   
 </head>
   <body ng-cloak>
-
+<h3>SM: {{submenuShow}} Show: {{show}} active: {{active}} isActive{{isActive}}</h3>
      <header id="projectHeader" ng-class="{contents: hiding}">
        <div id="hamburger" ng-click="hiding = !hiding">
           <i class="fa fa-bars"></i>
 		  </div>
        <nav id="navbar" ng-click="hiding = true" scroll-position="scroll" ng-class="{smaller: scroll > 50, big: scroll >=50, header: hiding}">
         <img class="profile" src="/images/profile3.jpg" alt="profile pic">
-        <ul ng-class="{hiding: hiding, smaller: scroll < 50, big: scroll >=50}">
+        <ul ng-class="{smaller: scroll < 50, big: scroll >=50}">
              
            <li><a id="navbar1" ng-href="/#/home">Home</a></li>
            
-             <li class="dropdown" ng-click="show = show" ng-mouseover="show = true" ng-mouseleave="show = false"><a ng-href="/#/details">App Details<i class="fa fa-caret-down"></i></a>
-             <ul class="sub-menu" ng-class="{show: show}">
+             <li class="dropdown" ng-mouseover="show = true" ng-mouseleave="show = false" is-active="active"><button>
+                <a ng-href="/#/details">App Details
+                  <i class="fa fa-caret-down"></i>
+              </a>
+            </button>
+             <ul class="sub-menu" ng-class="{show: show, active: active}">
                 <li ng-class="{show: show}"><a id="navbar2" href="/#/details/publications">Publications App</a></li>
                 <li ng-class="{show: show}"><a id="navbar3" href="/#/details/shopping-angular">Shopping Angular</a></li>
                 <li><a id="navbar4" href="/#/details/reddit-firebase-angular">Reddit Firebase Angular</a></li>

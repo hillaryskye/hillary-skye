@@ -366,14 +366,14 @@ img:after {
   margin: auto;
 }
 
-.animate-show-hide.ng-hide {
+/* .animate-show-hide.ng-hide {
   opacity: 0;
 }
 
 .animate-show-hide.ng-hide-add,
 .animate-show-hide.ng-hide-remove {
   transition: all linear 0.5s;
-}
+} */
 
 .project {
   position: relative;
@@ -655,11 +655,28 @@ header nav {
 
 /* hide sub menu links */
 ul.sub-menu {
-    display:none;
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    transition:visibility 0s linear 0.5s,opacity 0.5s linear;
 }
 
 ul.show {
-  display: block;
+  /* display: block; */
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+ul.active {
+  border: 2px solid green;
+  /* visibility: visible; */
+  /* opacity: 1; */
+  /* transition-delay: 0s; */
+} 
+
+ul.active {
+  border: 2px solid red;
 }
 
 #project-box img {
