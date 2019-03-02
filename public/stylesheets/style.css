@@ -461,9 +461,6 @@ section.module p {
 section.module p:last-child {
   margin-bottom: 0; }
 
-section.module.content {
-  /* padding: 40px 0;  */
-}
 .project-margin {
   margin-top: 100px;
 }

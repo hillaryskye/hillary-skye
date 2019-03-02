@@ -10,7 +10,7 @@ app.factory('PortfolioService', function () {
       type: 'Galvanize Project',
       url: 'https://shoppingangular.firebaseapp.com/',
       desc: 'This app is a shopping cart for tea, which was developed using Angular and Firebase',
-      image: 'shopping-angular.png',
+      image: 'shopping-angular_opt_sm.jpg',
       icon: 'fa fa-coffee',
       github: 'https://github.com/hillaryskye/shopping-angular'
     },
@@ -19,7 +19,7 @@ app.factory('PortfolioService', function () {
       type: 'Galvanize Project',
       url: 'https://redditfirebase.firebaseapp.com/',
       desc: 'Create, Read, Delete posts of a mock Reddit App with Firebase, Angular. Each post can be upvoted/ downvoted, favorited and you can add comments to each post.',
-      image: 'reddit-firebase-angular.png',
+      image: 'reddit-firebase-angular_opt_sm.jpg',
       icon: 'fa fa-reddit',
       github: 'https://github.com/hillaryskye/reddit-firebase-angular'
     },
@@ -28,7 +28,7 @@ app.factory('PortfolioService', function () {
     //   type: 'Personal Project',
     //   url: 'https://stormy-waters-7608.herokuapp.com/',
     //   desc: 'TuneSet creates Traditional Irish abc music files, which include the name of the tune, the type of which it is a jig or a reel, the key, and other info about the tune. A page generates, which the abc music notated into musical printed material. Another page shows you dynamically key choices through TheSession.org\'s API and returns a list of tunes and the user can choose a tune, which generates another page that shows all of the tunes in their collection of tunes from a database.',
-    //   image: 'tuneSet.png',
+    //   image: 'tuneset_opt.jpg',
     //   icon: 'fa fa-music',
     //   github: 'https://github.com/hillaryskye/tuneSet'
     // },
@@ -37,7 +37,7 @@ app.factory('PortfolioService', function () {
       type: 'Hackathon inspired Project',
       url: 'https://fathomless-wave-8517.herokuapp.com/colors',
       desc: 'This app has 2 ways of creating a colors. Firstly, you can just enter the red, green, blue values and secondly, you can choose two colors and it mixes a new color and all colors are saved in a mongo database.',
-      image: 'mixer.png',
+      image: 'mixer_opt.jpg',
       icon: 'fa fa-paint-brush',
       github: 'https://github.com/hillaryskye/mixer'
     }
@@ -49,7 +49,7 @@ app.factory('PortfolioService', function () {
       type: 'Portfolio: Logo Design #1',
       codepen: 'https://codepen.io/hillaryskye/pen/zeWKWX',
       desc: 'This design was my first attempt at using text on a path using SVG with SMIL',
-      image: 'portfolioLogo12',
+      image: 'portfolioLogo12_opt_sm',
       icon: 'fa fa-paint-brush',
       details: '/#/designDetails/portfolioLogo1'
     },
@@ -58,7 +58,7 @@ app.factory('PortfolioService', function () {
       type: 'Portfolio: Logo Design #2',
       codepen: 'https://codepen.io/hillaryskye/pen/BMrxyz',
       desc: 'This design was my second attempt at using text on a path using SVG with SMIL and I added @keyframes with CSS for the affect with the name scrolling affect',
-      image: 'portfolioLogo22',
+      image: 'portfolioLogo22_opt_sm',
       icon: 'fa fa-paint-brush',
       details: '/#/designDetails/portfolioLogo2'
   },
@@ -66,7 +66,7 @@ app.factory('PortfolioService', function () {
     name: 'Work Wireframe #1',
     type: 'Wireframe #1 from a client',
     desc: 'Redesign of all widgets as head of the design team',
-    image: 'wireframe2',
+    image: 'wireframe2_opt',
     icon: 'fa fa-paint-brush',
     details: '/#/designDetails/wireframe2'
 },
@@ -74,7 +74,7 @@ app.factory('PortfolioService', function () {
   name: 'Work Wireframe #2',
   type: 'Wireframe #2 from a client',
   desc: 'Example of Axure Wireframing',
-  image: 'wireframe3',
+  image: 'wireframe3_opt_sm',
   icon: 'fa fa-paint-brush',
   details: '/#/designDetails/wireframe3'
 }]
