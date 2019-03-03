@@ -2,33 +2,30 @@
 <html ng-app="PortfolioApp">
 <head>
   <meta charset="UTF-8">
+  <meta name="theme-color" content="#af0a0a">
+  <meta name="Description" content="Portfolio for Hillary Skye showing web apps examples in Angular, Node, MongoDB, vanilla JS, JQuery, CSS advanced techniques with Navbar, dropdownmenu on hover and Angular ngstyles, etc..., using Angular 1x.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700italic|Bad+Script' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,900,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,300,200' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/js/animate.css">
+  <link rel="stylesheet" href="/animate.css/animate.min.css">
 
   <!-- Improve loading of pics early -->
-  <link rel="preload" as="image" href="/images/arrow-down.png"/>
-  <link rel="preload" as="image" href="/images/colorado-sunrise.jpg"/>
-  <link rel="preload" as="image" href="/images/mixer_opt.jpg"/>
-  <link rel="preload" as="image" href="/images/portfolioLogo12_opt_sm.jpg"/>
-  <link rel="preload" as="image" href="/images/profile3_opt.png"/>
-  <link rel="preload" as="image" href="/images/portfolioLogo22_opt.jpg"/>
-  <link rel="preload" as="image" href="/images/publications_opt_sm.jpg"/>
-  <link rel="preload" as="image" href="/images/reddit-firebase-angular_opt_sm.jpg"/>
-  <link rel="preload" as="image" href="/images/publications-api_opt_sm.jpg"/>
-  <link rel="preload" as="image" href="/images/shannon.svg"/>
-  <link rel="preload" as="image" href="/images/shopping-angular_opt_sm.jpg"/>
-  <link rel="preload" as="image" href="/images/tuneset_opt.jpg"/>
-  <link rel="preload" as="image" href="/images/wireframe21_opt_sm.jpg"/>
-  <link rel="preload" as="image" href="/images/wireframe31_opt.jpg"/>
+  <link rel="prefetch" as="image" href="/images/arrow-down.png"/>
+  <link rel="prefetch" as="image" href="/images/colorado-sunrise_sm.jpg"/>
+  <link rel="prefetch" as="image" href="/images/mixer_opt.jpg"/>
+  <link rel="prefetch" as="image" href="/images/portfolioLogo12_opt_sm.jpg"/>
+  <link rel="prefetch" as="image" href="/images/profile3_opt.png"/>
+  <link rel="prefetch" as="image" href="/images/portfolioLogo22_opt.jpg"/>
+  <link rel="prefetch" as="image" href="/images/publications_opt_sm.jpg"/>
+  <link rel="prefetch" as="image" href="/images/reddit-firebase-angular_opt_sm.jpg"/>
+  <link rel="prefetch" as="image" href="/images/publications-api_opt_sm.jpg"/>
+  <link rel="prefetch" as="image" href="/images/shannon.svg"/>
+  <link rel="prefetch" as="image" href="/images/shopping-angular_opt_sm.jpg"/>
+  <link rel="prefetch" as="image" href="/images/tuneset_opt.jpg"/>
+  <link rel="prefetch" as="image" href="/images/wireframe21_opt_sm.jpg"/>
+  <link rel="prefetch" as="image" href="/images/wireframe31_opt.jpg"/>
+  <link rel="dns-prefetch" href="//fonts.googleapis.com/">
   
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -37,12 +34,12 @@
 
   <link rel="stylesheet" href="/stylesheets/style.css">
   <title>Document</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-route.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-animate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-route.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.min.js"></script>
   
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script> -->
   
 </head>
   <body ng-cloak>
@@ -54,7 +51,7 @@
         <img class="profile" src="/images/profile3_opt.png" alt="profile pic">
         <ul ng-class="{smaller: scroll < 50, big: scroll >=50}">
              
-           <li><a id="navbar1" ng-href="/#/home">Home</a></li>
+           <li><a ng-href="/#/home">Home</a></li>
            
              <li class="dropdown" ng-mouseover="show = true" ng-mouseleave="show = false"><button>
                 <a ng-href="/#/details">App Details
@@ -62,14 +59,14 @@
               </a>
             </button class="nav-button">
              <ul class="sub-menu" ng-class="{show: show, active: active}">
-                <li ng-class="{show: show}"><a id="navbar2" href="/#/details/publications">Publications App</a></li>
-                <li ng-class="{show: show}"><a id="navbar3" href="/#/details/shopping-angular">Shopping Angular</a></li>
-                <li><a id="navbar4" href="/#/details/reddit-firebase-angular">Reddit Firebase Angular</a></li>
+                <li ng-class="{show: show}"><a href="/#/details/publications">Publications App</a></li>
+                <li ng-class="{show: show}"><a href="/#/details/shopping-angular">Shopping Angular</a></li>
+                <li><a href="/#/details/reddit-firebase-angular">Reddit Firebase Angular</a></li>
                 <!-- <li><a href="/#/details/tuneset">Tuneset</a></li> -->
-                <li><a id="navbar5" href="/#/details/mixer">Mixer</a></li>
+                <li><a href="/#/details/mixer">Mixer</a></li>
               </ul>
             </li>
-           <li><a id="navbar6" ng-href="/#/designs">Design Work</a></li>           
+           <li><a ng-href="/#/designs">Design Work</a></li>           
            <li><a ng-href="/#/skills">Skills</a></li>
            <li><a ng-href="/#/about">About</a></li>
            <li><a ng-href="/#/contact">Contact</a></li>
@@ -83,5 +80,21 @@
     <script src="/js/controllers.js"></script>
     <script src="/js/services.js"></script>
     <script src="/js/directives.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    WebFontConfig = {
+        google: { families: [ 'Raleway:400,500,300,200' ] }
+    };
+    (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+    })();
+</script>
 </body>
 </html>

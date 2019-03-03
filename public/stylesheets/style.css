@@ -1,3 +1,9 @@
+/* @font-face { font-family: raleway; 
+  src: url('/fonts/Raleway.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+} */
+
 *, *:before, *:after {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -109,42 +115,6 @@ main {
   display: table;
   clear: both; }
 
-/* -------- COLUMN LAYOUTS -------*/
-/* -- Column Sizes -- */
-.one-fourth {
-  width: 21.25%; }
-
-.one-third {
-  width: 29.333%; }
-
-/* .one-half     { width:45.5%; }
-*/
-.two-third {
-  width: 61.666%; }
-
-.three-fourth {
-  width: 69.75%; }
-
-.one-column {
-  width: 94%; }
-
-.full-column {
-  width: 100%; }
-
-/* -- Column Margin & Float-- */
-.one_half, .one_third, .two_third,
-.three_fourth, .one_fourth, .one_column,
-.full_column {
-  margin-left: 3%;
-  margin-top: 1%;
-  float: left; }
-
-/* -- Column Row (aka Clearfix) -- */
-.row:after {
-  content: "";
-  display: table;
-  clear: both; }
-
 .welcome {
   width: 50%;
   margin: 0 auto;
@@ -217,7 +187,6 @@ img:after {
 }
 
 .project-inside:hover {
-  /* transition: all 0.8s ease; */
   opacity: 1;
   padding: 20px;
   min-height: 400px;
@@ -261,16 +230,7 @@ img:after {
 .project .about {
   font-style: normal;
 }
-/* 
-.project .mask3 {
-  min-height: 459px;
-}
-.project .mask4 {
-  min-height: 405px;
-}
-.project .mask5 {
-  min-height: 430px;
-} */
+
 .project a.href {
     display: inline-block;
     text-decoration: none;
@@ -283,59 +243,6 @@ img:after {
 .project a.href:hover {
     box-shadow: 0 0 5px #000;
 }
-/* .view-first .img {
-    transition: all 0.2s linear;
-} */
-/* .view-first .mask {
-    opacity: 0;
-    background-color: rgba(245,245,220, 0.9);
-    transition: all 0.4s ease-in-out;
-} */
-/* .view-first h2 {
-    transform: translateY(-300px);
-    opacity: 0;
-    transition: all 0.4s ease-in-out;
-} */
-/* .view-first p {
-  transform: translateX(-300px);
-  opacity: 0;
-  transition: all 0.4s linear;
-  text-align: left;
-} */
-/* .view-first .href {
-  transform: translateX(300px);
-  opacity: 0;
-  transition: all 0.4s ease-in-out;
-} */
-/* .view-first:hover img {
-	transform: scale(1);
-  width: 80%;
-  display: none;
-} */
-/* .view-first:hover .mask {
-	opacity: 1;
-} */
-/* .view-first:hover h2,
-.view-first:hover p,
-.view-first:hover .href {
-    opacity: 1;
-    transform: translateY(0px);
-    transform: translateX(0px);
-} */
-/* .view-first:hover p {
-    transition-delay: 0.1s;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-bottom: 0px;
-    padding-right: 0px;
-} */
-/* .view-first:hover .href {
-    transition-delay: 0.2s;
-    padding-bottom: 20px;
-} */
-/* .view-first:hover h2 {
-    transition-delay: 0.2s;
-} */
 
 .text-align {
   padding-right: 20px;
@@ -366,15 +273,6 @@ img:after {
   margin: auto;
 }
 
-/* .animate-show-hide.ng-hide {
-  opacity: 0;
-}
-
-.animate-show-hide.ng-hide-add,
-.animate-show-hide.ng-hide-remove {
-  transition: all linear 0.5s;
-} */
-
 .project {
   position: relative;
   border-top: 1px solid rgba(255,255,255,0.3);
@@ -388,7 +286,6 @@ img:after {
 }
 
 .fa {
-  /* font-size: 1.5em; */
   color: #af0a0a; }
 
 .fa:hover, i:hover, a:hover i {
@@ -439,22 +336,15 @@ a:after {
   text-shadow: 1px 1px 2px white;
   font-size: 1.6em; }
 
-  /* .container {
-    padding-top: 150px;
-    border: 3px solid #000;
-} */
-
-.container100 {
-  /* width: 100%; */
+/* .container100 {
   background: rgba(0,0,0,.7);
-}
+} */
 
 section.module:last-child {
   margin-bottom: 0; }
 
 section.module p {
   margin-bottom: 10px;
-  /* font-size: 16px; */
   font-weight: 500;
 }
 
@@ -466,7 +356,6 @@ section.module p:last-child {
 }
 
 section.module.parallax {
-  /* height: 100px; */
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -474,7 +363,6 @@ section.module.parallax {
 
 section.module.parallax-1 {
   background-image: url("/images/colorado-sunrise.jpg");
-
 }
 
 .profile {
@@ -652,25 +540,16 @@ header nav {
 
 /* hide sub menu links */
 ul.sub-menu {
-    /* display: none; */
     visibility: hidden;
     opacity: 0;
     transition:visibility 0s linear 0.5s,opacity 0.5s linear;
 }
 
 ul.show {
-  /* display: block; */
   visibility: visible;
   opacity: 1;
   transition-delay: 0s;
 }
-
-ul.active {
-  border: 2px solid green;
-  /* visibility: visible; */
-  /* opacity: 1; */
-  /* transition-delay: 0s; */
-} 
 
 ul.active {
   border: 2px solid red;
@@ -717,7 +596,6 @@ ul.active {
 .project-inside .href, .design-inside .href {
   transform: translateX(-300px);
   transition: all 0.4s ease-in-out;
-
 }
 
 .design-inside {
@@ -824,7 +702,7 @@ html {
 
 body {
   background-color: #c7d1ea;
-  background-image: url("/images/colorado-sunrise.jpg");
+  background-image: url("/images/colorado-sunrise_opt.jpg");
   height: 600px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -889,7 +767,6 @@ h3 {
   padding: 10px;
   width: 25%;
   text-align: center;
-  /* margin: 20px auto; */
 }
 .shopping {
   width: 100%;
@@ -936,11 +813,6 @@ a:after {
     border: none;
     background: transparent;
   }
-
-  /* button:hover.nav-button {
-    background: transparent;
-    color: transparent;
-  } */
 
 a:hover {
   color: #fff;
@@ -1055,15 +927,6 @@ strong {
  */
 dfn {
   font-style: italic; }
-
-/**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari, and Chrome.
- */
-/* h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-} */
 /**
  * Address styling not present in IE 8/9.
  */

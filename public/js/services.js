@@ -1,8 +1,6 @@
 app.factory('PortfolioService', function () {
-  console.log('Im first from service')
   var ProjectList = {}
   // ProjectList.projects = []
-  console.log('4 in service')
 
   ProjectList.projects = [
     {
@@ -66,7 +64,7 @@ app.factory('PortfolioService', function () {
     name: 'Work Wireframe #1',
     type: 'Wireframe #1 from a client',
     desc: 'Redesign of all widgets as head of the design team',
-    image: 'wireframe2_opt',
+    image: 'wireframe21_opt_sm',
     icon: 'fa fa-paint-brush',
     details: '/#/designDetails/wireframe2'
 },
@@ -74,11 +72,10 @@ app.factory('PortfolioService', function () {
   name: 'Work Wireframe #2',
   type: 'Wireframe #2 from a client',
   desc: 'Example of Axure Wireframing',
-  image: 'wireframe3_opt_sm',
+  image: 'wireframe31_opt',
   icon: 'fa fa-paint-brush',
   details: '/#/designDetails/wireframe3'
 }]
-  console.log('1.5 from services')
 
   return ProjectList;
 })

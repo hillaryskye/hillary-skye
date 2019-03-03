@@ -2,7 +2,7 @@ app.controller("PortfolioCtrl", ["$scope", "PortfolioService", function($scope, 
 
   $scope.projects = PortfolioService.projects;
 
-  $scope.sayings = ['Creative', 'Intelligent', 'Fun', 'Tenacity']
+  // $scope.sayings = ['Creative', 'Intelligent', 'Fun', 'Tenacity']
 }]);
 
 app.controller("DetailsCtrl", ["$scope", "PortfolioService", function($scope, PortfolioService) {

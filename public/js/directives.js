@@ -19,20 +19,3 @@ app.directive('scrollPosition', function($window) {
       }
     };
   });
-
-//   app.directive('isActive', function($window) {
-//     return {
-//       scope: {
-//         active: '=isActive'
-//       },
-//       link: function(scope, element, attrs) {
-
-//          //detect scroll
-//         $(window).scroll(function (event) {
-//             scope.active = active;
-        
-//         scope.$apply();
-//         });
-//       }
-//     };
-//   });
